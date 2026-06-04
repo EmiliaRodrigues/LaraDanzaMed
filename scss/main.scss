@@ -1,10 +1,15 @@
 @use './partials/variables.scss';
+
 @use './partials/header.scss';
 @use './partials/video-fondo.scss';
 @use './partials/main-content.scss';
+@use './partials/footer.scss';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body{
+  background-color: variables.$colorprincipal;
 }

@@ -1,0 +1,37 @@
+@use './variables.scss';
+
+footer{
+    padding: 3%;
+    background-color: variables.$colorprincipal;
+    p{
+        font-family: variables.$letraparrafos;
+        color: variables.$colorletras;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+
+        .redes-sociales{
+            display: flex;
+            gap: 35px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 2%;
+            a{
+                font-family: variables.$letraparrafos;
+                text-decoration: none;
+                color: variables.$colorletras;
+
+                &:hover {
+                    transform: scale(1.1);
+                    color: #f49ee6;
+                }
+            }
+        }
+    }
+}

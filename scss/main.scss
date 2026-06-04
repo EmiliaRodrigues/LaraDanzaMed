@@ -1,0 +1,10 @@
+@use './partials/variables.scss';
+@use './partials/header.scss';
+@use './partials/video-fondo.scss';
+@use './partials/main-content.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

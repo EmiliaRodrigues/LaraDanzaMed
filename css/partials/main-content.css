@@ -10,6 +10,13 @@ main h2 {
   font-size: 3.5rem;
   padding-bottom: 2%;
 }
+main h3 {
+  font-family: "Puritan", sans-serif;
+  font-weight: 400;
+  color: #FFE1E0;
+  font-size: 2.5rem;
+  padding-bottom: 2%;
+}
 main p {
   font-family: "Prompt", sans-serif;
   color: #FFE1E0;
@@ -85,6 +92,31 @@ main .danza-anatomia .danza-anatomia-texto {
 }
 main .danza-anatomia .danza-anatomia-texto p {
   font-size: 2rem;
+}
+main .workshop {
+  padding-top: 5%;
+  background-color: #715f86;
+}
+main .workshop .invertido video {
+  width: 100%;
+  height: 450px;
+}
+main .workshop .invertido .logo-workshop {
+  width: 100%;
+  border-radius: 10px;
+}
+main .testimonios {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+main .testimonios .titulo-seccion {
+  text-align: center;
+}
+main .testimonios .texto-testimonios {
+  padding: 3%;
+  background-color: #7F55B1;
+  border-radius: 50px;
+  margin: 2%;
 }
 
 /*# sourceMappingURL=main-content.css.map */

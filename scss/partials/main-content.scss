@@ -23,6 +23,30 @@ main{
         font-family:  variables.$letraparrafos;
         color: variables.$colorletras;
     }
+    button{
+        a{
+            font-family: variables.$letraparrafos;
+            color: variables.$colorletras;
+            text-decoration: none;
+        }
+        padding: 2%;
+        border-radius: 10px;
+        margin: 5%; 
+        cursor: pointer;
+        background: linear-gradient(90deg,variables.$colorprincipal, variables.$colorsecundario);
+        transition: all 0.6s ease;
+        border: 10% ;
+        border: 1px solid variables.$colorletras;
+        &:hover {
+            background: linear-gradient(90deg, #f49ee6, #b129c6);
+            box-shadow: 0 4px 15px rgb(234, 149, 212);
+        }
+
+        &:active{
+            background: linear-gradient(90deg, #f49ee6, #b129c6);
+            transform: scale(0.98);
+            box-shadow: 0 4px 15px rgb(234, 149, 212);
+        }
     .sobre-mi-podcast{
         background-color: variables.$colorfondo;
         padding: 4%;
@@ -38,33 +62,12 @@ main{
             border-radius: 10px;
         }
         .podcast{
+            .texto-podcast{
+                text-align: center;
+            }
             padding-top:3%;
             .botones-podcast{
                 margin: 10%;
-                button{
-                    a{
-                        font-family: variables.$letraparrafos;
-                        color: variables.$colorletras;
-                        text-decoration: none;
-                    }
-                    padding: 2%;
-                    border-radius: 10px;
-                    margin: 5%; 
-                    cursor: pointer;
-                    background: linear-gradient(90deg,variables.$colorprincipal, variables.$colorsecundario);
-                    transition: all 0.6s ease;
-                    border: 10% ;
-                    border: 1px solid variables.$colorletras;
-                    &:hover {
-                        background: linear-gradient(90deg, #f49ee6, #b129c6);
-                        box-shadow: 0 4px 15px rgb(234, 149, 212);
-                    }
-
-                    &:active{
-                        background: linear-gradient(90deg, #f49ee6, #b129c6);
-                        transform: scale(0.98);
-                        box-shadow: 0 4px 15px rgb(234, 149, 212);
-                    }
                 }
             }
         }
@@ -126,6 +129,29 @@ main{
             background-color: variables.$colorprincipal;
             border-radius: 50px;
             margin: 2%;
+        }
+    }
+    .ofrece{
+        background-color: variables.$colorfondo;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        .card-title{
+            font-family: variables.$letrasubtitulos;
+            font-weight: 600;
+            color: variables.$colorletras;
+            font-size: 3rem;
+            padding-bottom: 2%;
+        }
+        .card-fondo{
+            background-color: variables.$colorprincipal;
+            border: none;
+        }
+        .card-footer{
+            .text-body-secondary{
+                text-decoration: none;
+                font-family: variables.$letraparrafos;
+                color: variables.$colorletras !important;
+            }
         }
     }
 }

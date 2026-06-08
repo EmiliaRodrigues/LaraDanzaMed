@@ -15,23 +15,25 @@
             Tu navegador no soporta videos
         </video>
         <header>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="titulo col-md-2">
-                        <h1 class="titulo-pagina">LaraDanzaMED</h1>
-                    </div>
-                    <div class="menu-nav col-md-10">
-                        <nav>
-                            <ul>
-                                <li><a href="#">Inicio</a></li>
-                                <li><a href="./pages/suspencion.html">Suspención</a></li>
-                                <li><a href="./pages/acroAnAtomica.html">Acro An-Atómica</a></li>
-                                <li><a href="./pages/lesionesyprevension.html">Lesiones y Prevensión</a></li>
-                            </ul>
-                        </nav>
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <h1 class="navbar-brand" href="#">LaraDanzaMED</h1>
+                    <!-- botón hamburger, aparece solo en mobile -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- menú, se colapsa en mobile -->
+                    <div class="collapse navbar-collapse" id="menuNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/suspencion.html">Suspensión</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/acroAnAtomica.html">Acro An-Atómica</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/lesionesyprevension.html">Lesiones y Prevención</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
         </header>
             <div class="container video-texto">
                 <div class="column">
@@ -86,7 +88,7 @@
                 </div>
             </article>
             <article class="podcast" data-aos="fade-up">
-                <div class="conteiner">
+                <div class="container">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-md-6">
                             <h2 class="titulo-seccion">El Cuerpo en Perspectiva</h2>
@@ -163,7 +165,7 @@
             <article class="testimonios" data-aos="fade-up">
                 <h2 class="titulo-seccion">Testimonios</h2>
                 <div class="container text-center">
-                <div class="row">
+                <div class="row align-items-stretch">
                     <div class="col texto-testimonios">
                         <p>"Aprender esto muy necesario porqeu en clase marcan inversiones, pero no me enseñan como hacerlas"</p>
                     </div>
@@ -171,7 +173,7 @@
                         <p>"Entendí que los brazos no son solo intermediarios me sostienen activamente"</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row align-items-stretch">
                     <div class="col texto-testimonios">
                         <p>"Encontré la eficiencia en moverme desde el eje central del cuerpo"</p>
                     </div>
@@ -191,7 +193,7 @@
                 <div class="card h-100 card-fondo">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h2 class="card-title">Suspención</h2>
+                    <h2 class="card-title">Suspendida</h2>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
                 <div class="card-footer">
@@ -217,7 +219,7 @@
                 <div class="card h-100 card-fondo">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h2 class="card-title">Lesiones y Prevensión</h2>
+                    <h2 class="card-title">Lesiones y Prevención</h2>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 </div>
                 <div class="card-footer">

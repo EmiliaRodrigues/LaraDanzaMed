@@ -6,20 +6,20 @@ main .row {
 main h2 {
   font-family: "Puritan", sans-serif;
   font-weight: 600;
-  color: #FFE1E0;
-  font-size: 3.5rem;
+  color: #280619;
+  font-size: 3.8rem;
   padding-bottom: 2%;
 }
 main h3 {
   font-family: "Puritan", sans-serif;
   font-weight: 400;
-  color: #FFE1E0;
+  color: #280619;
   font-size: 2.5rem;
   padding-bottom: 2%;
 }
 main p {
   font-family: "Prompt", sans-serif;
-  color: #FFE1E0;
+  color: #280619;
 }
 main button a {
   font-family: "Prompt", sans-serif;
@@ -31,43 +31,50 @@ main button {
   border-radius: 10px;
   margin: 5%;
   cursor: pointer;
-  background: linear-gradient(90deg, #7F55B1, #71568f);
+  background: linear-gradient(90deg, #7F55B1, #732952);
   transition: all 0.6s ease;
   border: 10%;
   border: 1px solid #FFE1E0;
 }
 main button:hover {
-  background: linear-gradient(90deg, #f49ee6, #b129c6);
+  background: linear-gradient(90deg, #71568f, #732952);
   box-shadow: 0 4px 15px rgb(234, 149, 212);
+  transform: scale(1.05);
 }
 main button:active {
-  background: linear-gradient(90deg, #f49ee6, #b129c6);
+  background: linear-gradient(90deg, #71568f, #732952);
   transform: scale(0.98);
   box-shadow: 0 4px 15px rgb(234, 149, 212);
 }
-main button .sobre-mi-podcast {
-  background-color: #715f86;
+main .sobre-mi-podcast {
+  background-color: #8B878C;
   padding: 4%;
 }
-main button .sobre-mi-podcast .sobre-mi-texto {
+main .sobre-mi-podcast .sobre-mi-texto {
   padding-left: 10%;
 }
-main button .sobre-mi-podcast .sobre-mi-texto :nth-child(3), main button .sobre-mi-podcast .sobre-mi-texto :nth-child(4) {
+main .sobre-mi-podcast .sobre-mi-texto :nth-child(3), main .sobre-mi-podcast .sobre-mi-texto :nth-child(4) {
   font-weight: 200;
 }
-main button .sobre-mi-podcast .carusel {
+main .sobre-mi-podcast .carusel {
   padding: 2%;
   max-width: 350px;
   border-radius: 10px;
 }
-main button .sobre-mi-podcast .podcast .texto-podcast {
-  text-align: center;
-}
-main button .sobre-mi-podcast .podcast {
+main .sobre-mi-podcast .podcast {
   padding-top: 3%;
 }
-main button .sobre-mi-podcast .podcast .botones-podcast {
-  margin: 10%;
+main .sobre-mi-podcast .podcast .texto-podcast {
+  text-align: center;
+}
+main .sobre-mi-podcast .podcast img {
+  width: 70%;
+  border-radius: 10px;
+}
+main .sobre-mi-podcast .podcast .botones-podcast {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 main .danza-anatomia {
   position: relative;
@@ -93,12 +100,18 @@ main .danza-anatomia .danza-anatomia-texto {
   justify-content: center;
   text-align: center;
 }
+main .danza-anatomia .danza-anatomia-texto h2 {
+  color: azure;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
 main .danza-anatomia .danza-anatomia-texto p {
   font-size: 2rem;
+  color: azure;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 main .workshop {
   padding-top: 5%;
-  background-color: #715f86;
+  background-color: #8B878C;
 }
 main .workshop .invertido video {
   width: 100%;
@@ -117,12 +130,17 @@ main .testimonios .titulo-seccion {
 }
 main .testimonios .texto-testimonios {
   padding: 3%;
-  background-color: #7F55B1;
+  background-color: #732952;
   border-radius: 50px;
   margin: 2%;
+  height: 100%;
+}
+main .testimonios .texto-testimonios p {
+  text-align: center;
+  color: #FFE1E0;
 }
 main .ofrece {
-  background-color: #715f86;
+  background-color: #8B878C;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -133,8 +151,11 @@ main .ofrece .card-title {
   font-size: 3rem;
   padding-bottom: 2%;
 }
+main .ofrece p {
+  color: #FFE1E0;
+}
 main .ofrece .card-fondo {
-  background-color: #7F55B1;
+  background-color: #732952;
   border: none;
 }
 main .ofrece .card-footer .text-body-secondary {

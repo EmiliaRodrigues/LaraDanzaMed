@@ -30,11 +30,13 @@
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   margin: 0;
   padding: 20px;
+  color: azure;
 }
 .video-inicio .video-texto h3 {
   font-family: "Puritan", sans-serif;
   color: #FFE1E0;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  color: azure;
 }
 
 /*# sourceMappingURL=video-fondo.css.map */

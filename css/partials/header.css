@@ -2,29 +2,53 @@
 header {
   position: relative;
   z-index: 20;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   padding: 3%;
 }
-header h1 {
+header nav .navbar-toggler {
+  border: none;
+}
+header nav .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23f0ffff' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+header nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+header nav .navbar-toggler:hover {
+  transform: scale(1.05);
+}
+header nav .navbar-toggler:hover .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23f49ee6' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+header nav .navbar-brand {
   font-family: "Catamaran", sans-serif;
   font-weight: 700;
-  color: #FFE1E0;
+  color: azure;
   font-size: 3rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
-header nav ul {
+header nav .navbar-brand:hover {
+  transform: scale(1.05);
+  color: #f49ee6;
+}
+header nav .navbar-nav {
   display: flex;
   flex-direction: row;
   gap: 20px;
   justify-content: end;
   align-items: center;
 }
-header nav ul li {
+header nav .navbar-nav li {
   font-family: "Prompt", sans-serif;
   list-style: none;
 }
-header nav ul li a {
+header nav .navbar-nav li a {
   text-decoration: none;
-  color: #FFE1E0;
+  color: azure;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+header nav .navbar-nav li a:hover {
+  transform: scale(1.05);
+  color: #f49ee6;
 }
 
 /*# sourceMappingURL=header.css.map */

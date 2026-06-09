@@ -22,11 +22,14 @@ header nav .navbar-toggler:hover .navbar-toggler-icon {
 header nav .navbar-brand {
   font-family: "Catamaran", sans-serif;
   font-weight: 700;
-  color: azure;
   font-size: 3rem;
+}
+header nav .navbar-brand a {
+  text-decoration: none;
+  color: azure;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
-header nav .navbar-brand:hover {
+header nav .navbar-brand a:hover {
   transform: scale(1.05);
   color: #f49ee6;
 }
@@ -77,8 +80,7 @@ header nav .navbar-nav li a:hover {
 }
 .video-inicio .video-texto h2 {
   font-family: "Puritan", sans-serif;
-  font-size: 48px;
-  color: #FFE1E0;
+  font-size: 3rem;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   margin: 0;
   padding: 20px;
@@ -86,7 +88,6 @@ header nav .navbar-nav li a:hover {
 }
 .video-inicio .video-texto h3 {
   font-family: "Puritan", sans-serif;
-  color: #FFE1E0;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   color: azure;
 }
@@ -153,6 +154,9 @@ main .sobre-mi-podcast .carusel {
   max-width: 350px;
   border-radius: 10px;
 }
+main .sobre-mi-podcast .carusel .carousel-inner img {
+  border-radius: 20px;
+}
 main .sobre-mi-podcast .podcast {
   padding-top: 3%;
 }
@@ -161,12 +165,11 @@ main .sobre-mi-podcast .podcast .texto-podcast {
 }
 main .sobre-mi-podcast .podcast img {
   width: 70%;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 main .sobre-mi-podcast .podcast .botones-podcast {
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
 main .danza-anatomia {
   position: relative;
@@ -208,6 +211,7 @@ main .workshop {
 main .workshop .invertido video {
   width: 100%;
   height: 450px;
+  border-radius: 20px;
 }
 main .workshop .invertido .logo-workshop {
   width: 100%;
@@ -290,6 +294,66 @@ footer .container .redes-sociales a:hover {
   color: #f49ee6;
 }
 
+@media (max-width: 583px) {
+  header {
+    padding: 1%;
+  }
+  header nav .navbar-brand {
+    font-size: 2rem;
+  }
+  .video-inicio {
+    height: 100dvh;
+  }
+  .video-inicio video {
+    object-fit: cover;
+  }
+  .video-inicio .video-texto {
+    align-items: center;
+  }
+  .video-inicio .video-texto h2 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+  .video-inicio .video-texto h3 {
+    font-size: 1.4rem;
+    padding-top: 10px;
+  }
+  main h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  main .sobre-mi-podcast .sobre-mi .carusel .carousel-inner img {
+    padding-bottom: 10%;
+  }
+  main .sobre-mi-podcast .podcast img {
+    padding-bottom: 10%;
+  }
+  main .danza-anatomia {
+    padding-top: 5%;
+  }
+  main .danza-anatomia img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  main .danza-anatomia .danza-anatomia-texto h2 {
+    font-size: 2rem;
+  }
+  main .danza-anatomia .danza-anatomia-texto p {
+    font-size: 1.4rem;
+  }
+  main .workshop .invertido h2 {
+    font-size: 2.5rem;
+  }
+  main .workshop .invertido h3 {
+    font-size: 1.4rem;
+  }
+  main .workshop .invertido .logo-workshop {
+    border-radius: 10px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -298,6 +362,11 @@ footer .container .redes-sociales a:hover {
 
 body {
   background-color: #7F55B1;
+}
+
+::selection {
+  background-color: #71568f;
+  color: #FFE1E0;
 }
 
 /*# sourceMappingURL=main.css.map */

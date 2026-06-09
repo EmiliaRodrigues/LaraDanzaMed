@@ -25,8 +25,7 @@
 }
 .video-inicio .video-texto h2 {
   font-family: "Puritan", sans-serif;
-  font-size: 48px;
-  color: #FFE1E0;
+  font-size: 3rem;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   margin: 0;
   padding: 20px;
@@ -34,7 +33,6 @@
 }
 .video-inicio .video-texto h3 {
   font-family: "Puritan", sans-serif;
-  color: #FFE1E0;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   color: azure;
 }

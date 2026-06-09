@@ -61,6 +61,11 @@ main{
             padding: 2%;
             max-width: 350px;
             border-radius: 10px;
+            .carousel-inner{
+                img{
+                    border-radius: 20px;
+                }
+            }
         }
         .podcast{
             padding-top: 3%;
@@ -69,12 +74,11 @@ main{
             }
             img{
                 width: 70%;
-                border-radius: 10px;
+                border-radius: 20px;
             }
             .botones-podcast{
                 display: flex;
                 flex-direction: column;
-                gap:5px;
             }
         }
     }
@@ -120,6 +124,7 @@ main{
             video{
                 width: 100%;
                 height: 450px;
+                border-radius: 20px;
             }
             .logo-workshop{
                 width: 100%;

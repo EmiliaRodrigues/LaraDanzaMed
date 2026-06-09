@@ -15,3 +15,7 @@
 body{
   background-color: variables.$colorprincipal;
 }
+::selection {
+    background-color: variables.$colorsecundario; 
+    color: variables.$colorletras;
+}

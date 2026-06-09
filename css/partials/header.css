@@ -22,11 +22,14 @@ header nav .navbar-toggler:hover .navbar-toggler-icon {
 header nav .navbar-brand {
   font-family: "Catamaran", sans-serif;
   font-weight: 700;
-  color: azure;
   font-size: 3rem;
+}
+header nav .navbar-brand a {
+  text-decoration: none;
+  color: azure;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
-header nav .navbar-brand:hover {
+header nav .navbar-brand a:hover {
   transform: scale(1.05);
   color: #f49ee6;
 }

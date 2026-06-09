@@ -1,9 +1,83 @@
 @use './variables.scss';
 
 @media (max-width: 583px) {
+    header{
+        padding: 1%;
+        nav{
+            .navbar-brand{
+                font-size: 2rem;
+            }
+        }
+    }
+    .video-inicio{
+        height: 100dvh;
+        video {
+            object-fit: cover;
+        }
+        .video-texto{
+            align-items: center;
+            h2{
+                word-break: break-word;
+                overflow-wrap: break-word;
+                font-size: 1.8rem;
+                padding: 10px;
+            }
+            h3{
+                font-size: 1.4rem;
+                padding-top: 10px;
+            }
+        }
+    }
 
-    // header{
-        
-    // }
-
+    main{
+       h2{
+            font-size: 3rem;
+            text-align: center;
+        }
+        .sobre-mi-podcast{
+            .sobre-mi{
+                .carusel{
+                    .carousel-inner{
+                        img{
+                            padding-bottom: 10%;
+                        }
+                    }
+                }
+            }
+            .podcast{
+                img{
+                    padding-bottom: 10%;
+                }
+            }
+        }
+        .danza-anatomia{
+            padding-top: 5%;
+            img{
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            .danza-anatomia-texto{
+                h2{
+                    font-size: 2rem; 
+                }
+                p{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .workshop{
+            .invertido{
+                h2{
+                    font-size: 2.5rem;
+                }
+                h3{
+                    font-size: 1.4rem;
+                }
+                .logo-workshop{
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
 }

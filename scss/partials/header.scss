@@ -23,12 +23,15 @@ header{
         .navbar-brand{
             font-family: variables.$letratitulos;
             font-weight: 700;
-            color: azure;
             font-size: 3rem;
-            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); 
-            &:hover {
-                transform: scale(1.05);
-                color: #f49ee6;
+            a{
+                text-decoration: none;
+                color: azure;
+                text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); 
+                &:hover {
+                    transform: scale(1.05);
+                    color: #f49ee6;
+                }
             }
         }
         .navbar-nav{
@@ -49,7 +52,6 @@ header{
                         color: #f49ee6;
                     }
                 }
-                
             }
         }
     }

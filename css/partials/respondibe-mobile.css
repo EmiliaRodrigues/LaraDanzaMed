@@ -1,3 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@media (max-width: 583px) {
+  header {
+    padding: 1%;
+  }
+  header nav .navbar-brand {
+    font-size: 2rem;
+  }
+  .video-inicio {
+    height: 100dvh;
+  }
+  .video-inicio video {
+    object-fit: cover;
+  }
+  .video-inicio .video-texto {
+    align-items: center;
+  }
+  .video-inicio .video-texto h2 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+  .video-inicio .video-texto h3 {
+    font-size: 1.4rem;
+    padding-top: 10px;
+  }
+  main h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  main .sobre-mi-podcast .sobre-mi .carusel .carousel-inner img {
+    padding-bottom: 10%;
+  }
+  main .sobre-mi-podcast .podcast img {
+    padding-bottom: 10%;
+  }
+  main .danza-anatomia {
+    padding-top: 5%;
+  }
+  main .danza-anatomia img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  main .danza-anatomia .danza-anatomia-texto h2 {
+    font-size: 2rem;
+  }
+  main .danza-anatomia .danza-anatomia-texto p {
+    font-size: 1.4rem;
+  }
+  main .workshop .invertido h2 {
+    font-size: 2.5rem;
+  }
+  main .workshop .invertido h3 {
+    font-size: 1.4rem;
+  }
+  main .workshop .invertido .logo-workshop {
+    border-radius: 10px;
+  }
+}
 
 /*# sourceMappingURL=respondibe-mobile.css.map */

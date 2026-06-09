@@ -10,14 +10,24 @@
 </head>
 <body>
     <header>
-        <h1 class="titulo-pagina">LaraDabzaMED</h1>
-        <nav class="menu-nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./suspencion.html">Suspendida</a></li>
-                <li><a href="./acroAnAtomica.html">Acro An-Atómica</a></li>
-                <li><a href="#">Lesiones y Prevención</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <h1 class="navbar-brand"><a href="../index.html">LaraDanzaMED</a></h1>
+                <!-- botón hamburger, aparece solo en mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- menú, se colapsa en mobile -->
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./suspendida.html">Suspendida</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./acroAnAtomica.html">Acro An-Atómica</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Lesiones y Prevención</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>

@@ -26,8 +26,7 @@
         
             h2 {
                 font-family: variables.$letrasubtitulos;
-                font-size: 48px;
-                color: variables.$colorletras;
+                font-size: 3rem;
                 text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);  
                 margin: 0;
                 padding: 20px;
@@ -35,7 +34,6 @@
             }
             h3{
                 font-family: variables.$letrasubtitulos;
-                color: variables.$colorletras;
                 text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); 
                 color: azure;
             }

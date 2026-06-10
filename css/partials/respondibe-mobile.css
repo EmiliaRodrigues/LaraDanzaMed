@@ -11,6 +11,7 @@
   }
   .video-inicio video {
     object-fit: cover;
+    height: 100% !important;
   }
   .video-inicio .video-texto {
     align-items: center;
@@ -51,9 +52,14 @@
   }
   main .workshop .invertido h2 {
     font-size: 2.5rem;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    text-align: left !important;
   }
   main .workshop .invertido h3 {
     font-size: 1.4rem;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   main .workshop .invertido .logo-workshop {
     border-radius: 10px;

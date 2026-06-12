@@ -29,7 +29,6 @@
             }
         }
     }
-
     main{
        h2{
             font-size: 3rem;
@@ -52,7 +51,6 @@
             }
         }
         .danza-anatomia{
-            padding-top: 5%;
             img{
                 height: 100%;
                 object-fit: cover;
@@ -83,6 +81,37 @@
                 .logo-workshop{
                     border-radius: 10px;
                 }
+            }
+        }
+        //SUSPENDIDA
+        .foto1{
+            img{
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            .foto1-texto{
+                position: absolute;
+                h2{
+                    padding-top: 20%;
+                    font-size: 2rem; 
+                }
+                p{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .incluye{
+            h2{
+                padding: 10% 0 10% 0;
+            }
+        }
+        .para-quien-es{
+            .emoji{
+                font-size: 2rem;
+            }
+            h2{
+                font-size: 2rem;
             }
         }
     }

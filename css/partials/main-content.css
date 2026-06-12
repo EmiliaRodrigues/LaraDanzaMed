@@ -48,7 +48,6 @@ main button:active {
 }
 main .sobre-mi-podcast {
   background-color: #8B878C;
-  padding: 4%;
 }
 main .sobre-mi-podcast .sobre-mi-texto {
   padding-left: 10%;
@@ -112,23 +111,24 @@ main .danza-anatomia .danza-anatomia-texto p {
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 main .workshop {
-  padding-top: 5%;
   background-color: #8B878C;
 }
 main .workshop .invertido video {
+  padding-top: 10%;
   width: 100%;
   height: 450px;
   border-radius: 20px;
 }
 main .workshop .invertido .logo-workshop {
+  padding-top: 10%;
   width: 100%;
   border-radius: 10px;
 }
-main .testimonios {
-  padding-top: 5%;
-  padding-bottom: 5%;
+main .workshop .invertido h2 {
+  padding-top: 10%;
 }
 main .testimonios .titulo-seccion {
+  padding-top: 5%;
   text-align: center;
 }
 main .testimonios .texto-testimonios {
@@ -168,6 +168,8 @@ main .ofrece .card-footer .text-body-secondary {
 }
 main .reserva {
   background-color: #8B878C;
+}
+main .reserva .reserva-texto {
   padding: 3%;
 }
 main .algo-te-suena {
@@ -218,7 +220,7 @@ main .foto2 {
   background-color: #8B878C;
   position: relative;
   width: 100%;
-  height: 900px;
+  height: 100dvh;
   overflow: hidden;
 }
 main .foto2 img {
@@ -226,7 +228,9 @@ main .foto2 img {
   top: 50%;
   left: 50%;
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center top;
   transform: translate(-50%, -50%);
   opacity: 0.9;
 }
@@ -235,11 +239,13 @@ main .foto2 .foto2-texto {
   z-index: 10;
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: end;
+  padding-right: 3%;
 }
 main .foto2 .foto2-texto h2 {
+  font-size: 3rem;
   color: azure;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
@@ -250,6 +256,9 @@ main .foto2 .foto2-texto p {
 }
 main .incluye {
   background-color: #8B878C;
+}
+main .incluye h2 {
+  padding-top: 3%;
 }
 main .incluye .card-incluye {
   background: linear-gradient(180deg, #71568f, #7F55B1);
@@ -269,12 +278,58 @@ main .incluye .card-incluye h3 {
 }
 main .para-quien-es {
   background-color: #8B878C;
+  padding: 3%;
 }
-main .para-quien-es .emoji {
-  font-size: 4rem;
+main .para-quien-es .titulo {
+  display: flex;
+  align-items: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+main .para-quien-es .titulo .emoji {
+  font-size: 2.8rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+main .para-quien-es .titulo h2 {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
 }
 main .preguntas-frecuentes {
   background-color: #8B878C;
+  padding: 3%;
+}
+main .preguntas-frecuentes .accordion-item {
+  background-color: #71568f;
+  border: none;
+}
+main .preguntas-frecuentes .accordion-item h3 {
+  padding: 0;
+}
+main .preguntas-frecuentes .accordion-item button {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  margin: 0;
+  font-size: 1.5rem;
+  color: #FFE1E0;
+}
+main .preguntas-frecuentes .accordion-item button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+main .preguntas-frecuentes .accordion-item button::after {
+  filter: brightness(10);
+}
+main .preguntas-frecuentes .accordion-item button:not(.collapsed)::after {
+  filter: brightness(10) !important;
+}
+main .preguntas-frecuentes .accordion-item .accordion-body {
+  color: #FFE1E0;
+  font-family: "Prompt", sans-serif;
 }
 
 /*# sourceMappingURL=main-content.css.map */

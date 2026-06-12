@@ -1,0 +1,47 @@
+@use './variables.scss';
+
+@media (min-width: 584px) and (max-width: 900px){
+    .video-inicio{
+        .video-texto{
+            align-items: center;
+            h2{
+                word-break: break-word;
+                overflow-wrap: break-word;
+                font-size: 1.8rem;
+                padding: 10px;
+            }
+            h3{
+                font-size: 1.4rem;
+                padding-top: 10px;
+            }
+        }
+    }
+    main{
+        h2{
+            text-align: center;
+        }
+        .sobre-mi-podcast{
+            .sobre-mi{
+                h2{
+                    padding-top: 5%;
+                }
+            }
+        }
+        .danza-anatomia{
+            img{
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        //SUSPENDIDA
+        .foto1{
+            img{
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}

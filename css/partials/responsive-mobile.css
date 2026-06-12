@@ -36,9 +36,6 @@
   main .sobre-mi-podcast .podcast img {
     padding-bottom: 10%;
   }
-  main .danza-anatomia {
-    padding-top: 5%;
-  }
   main .danza-anatomia img {
     height: 100%;
     object-fit: cover;
@@ -64,6 +61,30 @@
   main .workshop .invertido .logo-workshop {
     border-radius: 10px;
   }
+  main .foto1 img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  main .foto1 .foto1-texto {
+    position: absolute;
+  }
+  main .foto1 .foto1-texto h2 {
+    padding-top: 20%;
+    font-size: 2rem;
+  }
+  main .foto1 .foto1-texto p {
+    font-size: 1.4rem;
+  }
+  main .incluye h2 {
+    padding: 10% 0 10% 0;
+  }
+  main .para-quien-es .emoji {
+    font-size: 2rem;
+  }
+  main .para-quien-es h2 {
+    font-size: 2rem;
+  }
 }
 
-/*# sourceMappingURL=respondibe-mobile.css.map */
+/*# sourceMappingURL=responsive-mobile.css.map */

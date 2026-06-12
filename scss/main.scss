@@ -5,7 +5,8 @@
 @use './partials/main-content.scss';
 @use './partials/footer.scss';
 
-@use './partials/respondibe-mobile.scss';
+@use './partials/responsive-tablet.scss';
+@use './partials/responsive-mobile.scss';
 
 * {
   margin: 0;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 header {
   position: relative;
@@ -64,7 +65,7 @@ header nav .navbar-nav li a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 330%;
+  width: 100%;
   object-fit: cover;
   transform: translate(-50%, -50%);
   opacity: 0.9;
@@ -142,6 +143,9 @@ main button:active {
 main .sobre-mi-podcast {
   background-color: #8B878C;
 }
+main .sobre-mi-podcast .sobre-mi-texto .titulo-seccion {
+  margin-top: 10%;
+}
 main .sobre-mi-podcast .sobre-mi-texto {
   padding-left: 10%;
 }
@@ -149,7 +153,7 @@ main .sobre-mi-podcast .sobre-mi-texto :nth-child(3), main .sobre-mi-podcast .so
   font-weight: 200;
 }
 main .sobre-mi-podcast .carusel {
-  padding: 2%;
+  margin-top: 3%;
   max-width: 350px;
   border-radius: 10px;
 }
@@ -157,7 +161,7 @@ main .sobre-mi-podcast .carusel .carousel-inner img {
   border-radius: 20px;
 }
 main .sobre-mi-podcast .podcast {
-  padding-top: 3%;
+  margin-top: 3%;
 }
 main .sobre-mi-podcast .podcast .texto-podcast {
   text-align: center;
@@ -166,9 +170,13 @@ main .sobre-mi-podcast .podcast img {
   width: 70%;
   border-radius: 20px;
 }
+main .sobre-mi-podcast .podcast .botones-podcast button {
+  margin: 3%;
+}
 main .sobre-mi-podcast .podcast .botones-podcast {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5%;
 }
 main .danza-anatomia {
   position: relative;
@@ -207,10 +215,11 @@ main .workshop {
   background-color: #8B878C;
 }
 main .workshop .invertido video {
-  padding-top: 10%;
+  padding: 0;
+  margin-top: 10%;
   width: 100%;
-  height: 450px;
-  border-radius: 20px;
+  height: 500px;
+  border-radius: 30px;
 }
 main .workshop .invertido .logo-workshop {
   padding-top: 10%;
@@ -368,6 +377,35 @@ main .incluye .card-incluye .emoji {
 main .incluye .card-incluye h3 {
   font-weight: 700;
   margin-top: 1rem;
+}
+main .incluye .card-incluye .pdf-images {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-80%);
+  display: flex;
+  align-items: flex-end;
+  gap: 0; /* usaremos solapamiento con margen negativo si hace falta */
+}
+main .incluye .card-incluye {
+  /* tamaño base de las miniaturas */
+}
+main .incluye .card-incluye .pdf-img {
+  width: 20%; /* ajusta según tu diseño */
+  height: auto;
+  transform-origin: bottom center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+main .incluye .card-incluye {
+  /* rotaciones para efecto abanico */
+}
+main .incluye .card-incluye .pdf-img-1 {
+  transform: rotate(-10deg) translateY(30px);
+  margin-right: -40px; /* solapa ligeramente las imágenes */
+  z-index: 2;
+}
+main .incluye .card-incluye .pdf-img-2 {
+  transform: rotate(8deg) translateY(3px);
+  z-index: 1;
 }
 main .para-quien-es {
   background-color: #8B878C;

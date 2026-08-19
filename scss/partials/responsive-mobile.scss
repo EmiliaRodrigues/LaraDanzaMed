@@ -66,6 +66,7 @@
             }
         }
         .workshop{
+            padding-top: 3%;
             .invertido{
                 h2{
                     font-size: 2.5rem;
@@ -80,6 +81,9 @@
                 }
                 .logo-workshop{
                     border-radius: 10px;
+                }
+                .invertido-texto{
+                    padding-top: 3%;
                 }
             }
         }

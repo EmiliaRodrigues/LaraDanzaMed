@@ -47,6 +47,9 @@
   main .danza-anatomia .danza-anatomia-texto p {
     font-size: 1.4rem;
   }
+  main .workshop {
+    padding-top: 3%;
+  }
   main .workshop .invertido h2 {
     font-size: 2.5rem;
     padding-bottom: 0 !important;
@@ -60,6 +63,9 @@
   }
   main .workshop .invertido .logo-workshop {
     border-radius: 10px;
+  }
+  main .workshop .invertido .invertido-texto {
+    padding-top: 3%;
   }
   main .foto1 img {
     height: 100%;

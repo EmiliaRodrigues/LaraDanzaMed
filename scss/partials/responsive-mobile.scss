@@ -109,6 +109,39 @@
             h2{
                 padding: 10% 0 10% 0;
             }
+            .card-incluye {
+                .pdf-images {
+                    position: absolute;
+                    top: 16px;           /* distancia desde el borde superior del card */
+                    right: 18px;         /* distancia desde el borde derecho del card */
+                    left: auto;          /* anular left:50% anterior */
+                    bottom: auto;
+                    transform: none;     /* quitar translateX que lo movía fuera */
+                    display: flex;
+                    align-items: flex-end;
+                    gap: 0;
+                    z-index: 5;          /* encima del card pero debajo de iconos si hace falta */
+                }
+
+                /* tamaño de las miniaturas en mobile */
+                .pdf-img {
+                    width: 70px;         /* tamaño fijo más predecible en mobile */
+                    height: auto;
+                    transform-origin: bottom center;
+                    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+                }
+
+                /* rotaciones ajustadas para que sigan pareciendo un abanico */
+                .pdf-img-1 {
+                    transform: rotate(-8deg) translateY(8px);
+                    margin-right: -18px;  /* solapamiento controlado */
+                    z-index: 2;
+                }
+                .pdf-img-2 {
+                    transform: rotate(6deg) translateY(4px);
+                    z-index: 1;
+                }
+            }
         }
         .para-quien-es{
             .emoji{
@@ -116,6 +149,48 @@
             }
             h2{
                 font-size: 2rem;
+            }
+        }
+        //ACRO
+        .portadaacro {
+            position: static; // vuelve al flujo normal
+            height: 55vh;
+            object-position: 15% bottom;
+        }
+        .hero-acro-texto {
+            padding: 1.5rem 0 2.5rem;
+
+            h2 img {
+                max-width: 75%;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+        .testimonio {
+            padding: 1.5rem 0;
+            text-align: center; // foto arriba, texto centrado debajo
+
+            .testimonio-foto {
+                width: 140px;
+                height: 140px;
+                border-width: 4px;
+                margin-bottom: 1rem;
+            }
+
+            h3 {
+                font-size: 2.1rem;
+
+                span {
+                    display: block; // el subtítulo baja a otra línea
+                    font-size: 1.1rem;
+                    margin-top: 0.25rem;
+                }
+            }
+
+            blockquote p {
+                font-size: 1rem;
             }
         }
     }

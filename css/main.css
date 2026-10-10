@@ -495,6 +495,135 @@ main .preguntas-frecuentes .accordion-item .accordion-body {
   color: #FFE1E0;
   font-family: "Prompt", sans-serif;
 }
+main .acro-inicio {
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+}
+main .portadaacro {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+main .hero-acro-texto {
+  position: relative;
+  text-align: center;
+}
+main .hero-acro-texto h2 img {
+  max-width: 100%;
+}
+main .acro-testimonios {
+  background-color: #847d86;
+  color: #fff;
+  padding: 4rem 0;
+}
+main .acro-testimonios .testimonio {
+  padding: 2.5rem 0;
+  text-align: left;
+}
+main .acro-testimonios .testimonio .testimonio-foto {
+  width: 250px;
+  height: 250px;
+}
+main .acro-testimonios .testimonio h3 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+main .acro-testimonios .testimonio h3 span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+main .acro-testimonios .testimonio blockquote {
+  margin: 0;
+}
+main .acro-testimonios .testimonio blockquote p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+main .acro-problema .problema-titulo {
+  background-color: #ebe8e9;
+  padding: 3rem 0;
+}
+main .acro-problema .problema-titulo h2 {
+  color: #b0001e;
+  font-size: 3.2rem;
+  line-height: 1.05;
+  margin: 0;
+}
+main .acro-problema .problema-titulo h2 + h2 {
+  margin-top: 3rem;
+}
+main .acro-problema .problema-franja .problema-texto {
+  background-color: #b0001e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 4rem;
+}
+main .acro-problema .problema-franja .problema-texto p {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin: 0;
+  max-width: 32rem;
+}
+main .acro-problema .problema-franja .problema-foto img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  object-fit: cover;
+  object-position: center bottom;
+}
+main .acro-clases {
+  position: relative;
+  background-image: url("../assets/acro-sucede.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+}
+main .acro-clases::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(224, 224, 224, 0.5);
+}
+main .acro-clases .container {
+  position: relative;
+}
+main .acro-clases h2 {
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1;
+  max-width: 30rem;
+  margin-bottom: 3rem;
+}
+main .acro-clases .clase-card {
+  background-color: #fff;
+  border: 4px solid #b0001e;
+  border-radius: 40px;
+  min-height: 180px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+main .acro-clases .clase-card p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+main .acro-cierre {
+  background-color: #d9d9d9;
+  padding: 6rem 0;
+}
+main .acro-cierre h2 {
+  color: #b0001e;
+  font-size: 4rem;
+  line-height: 1.05;
+}
 
 footer {
   padding: 3%;
@@ -571,28 +700,87 @@ footer .container .redes-sociales a:hover {
     object-fit: cover;
     object-position: center;
   }
+  main .incluye .card-incluye {
+    position: relative;
+    overflow: visible;
+  }
+  main .incluye .card-incluye .pdf-images {
+    position: absolute;
+    bottom: -2.5rem;
+    left: 50%;
+    transform: translateX(-95%);
+    display: flex;
+    align-items: flex-end;
+  }
+  main .incluye .card-incluye .pdf-img {
+    width: 34%;
+  }
+  main .incluye .card-incluye .pdf-img-1 {
+    transform: rotate(-15deg) translateY(15px);
+    margin-right: -30px;
+    z-index: 2;
+  }
+  main .incluye .card-incluye .pdf-img-2 {
+    transform: rotate(10deg) translateY(0px);
+    z-index: 1;
+  }
+  main .incluye .row {
+    row-gap: 2rem;
+  }
+  main .portadaacro {
+    object-position: 20% bottom;
+  }
+  main .hero-acro-texto h2 img {
+    max-width: 85%;
+  }
+  main .hero-acro-texto p {
+    font-size: 1.05rem;
+  }
+  main .testimonio {
+    padding: 2rem 0;
+  }
+  main .testimonio .testimonio-foto {
+    width: 170px;
+    height: 170px;
+    border-width: 5px;
+  }
+  main .testimonio h3 {
+    font-size: 2.6rem;
+  }
+  main .testimonio h3 span {
+    font-size: 1.2rem;
+  }
+  main .testimonio blockquote p {
+    font-size: 1.05rem;
+  }
 }
 @media (min-width: 767px) and (max-width: 991px) {
-  .sobre-mi-podcast .podcast img {
+  main .sobre-mi-podcast .podcast img {
     width: 100%;
   }
-  /* Aseguramos que el row no haga wrap en este rango */
-  .workshop .invertido .row {
+  main {
+    /* Aseguramos que el row no haga wrap en este rango */
+  }
+  main .workshop .invertido .row {
     display: flex; /* en caso de que alguna regla lo quite */
     flex-wrap: nowrap; /* importante: no apilar */
     gap: 2rem; /* separación entre columnas */
     align-items: flex-start; /* alinear al tope para que H2/H3 queden juntos */
     box-sizing: border-box;
   }
-  /* Forzar columnas 50% cada una (considerando gap) */
-  .workshop .invertido .row > .col-12.col-md-6 {
+  main {
+    /* Forzar columnas 50% cada una (considerando gap) */
+  }
+  main .workshop .invertido .row > .col-12.col-md-6 {
     flex: 0 0 calc(50% - 1rem);
     max-width: calc(50% - 1rem);
     box-sizing: border-box;
     order: 0; /* evita reordenamientos inesperados */
   }
-  /* VIDEO: responsivo pero con límite de altura para no estirar demasiado */
-  .workshop .invertido .row > .col-12.col-md-6 video {
+  main {
+    /* VIDEO: responsivo pero con límite de altura para no estirar demasiado */
+  }
+  main .workshop .invertido .row > .col-12.col-md-6 video {
     width: 100%;
     height: auto;
     max-height: 65vh; /* ajusta si querés el video más/menos alto */
@@ -602,8 +790,10 @@ footer .container .redes-sociales a:hover {
     margin: 0;
     padding: 0;
   }
-  /* HEADER interno: logo + título en la misma fila */
-  .workshop .invertido .workshop-header {
+  main {
+    /* HEADER interno: logo + título en la misma fila */
+  }
+  main .workshop .invertido .workshop-header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; /* NO permitir wrap */
@@ -613,8 +803,10 @@ footer .container .redes-sociales a:hover {
     box-sizing: border-box;
     margin-top: 3%;
   }
-  /* Wrapper del logo: tamaño fijo controlado para que no empuje */
-  .workshop .invertido .logo-wrapper {
+  main {
+    /* Wrapper del logo: tamaño fijo controlado para que no empuje */
+  }
+  main .workshop .invertido .logo-wrapper {
     flex: 0 0 auto;
     width: 140px; /* cambia a 120/160 si preferís */
     min-width: 120px;
@@ -622,16 +814,18 @@ footer .container .redes-sociales a:hover {
     display: flex;
     align-items: center;
   }
-  .workshop .invertido .logo-wrapper .logo-workshop,
-  .workshop .invertido .logo-workshop {
+  main .workshop .invertido .logo-wrapper .logo-workshop,
+  main .workshop .invertido .logo-workshop {
     width: 100%;
     height: auto;
     object-fit: contain;
     border-radius: 10px;
     display: block;
   }
-  /* Contenedor del título: puede encogerse dentro del flex (min-width:0 es clave) */
-  .workshop .invertido .titulo-wrapper {
+  main {
+    /* Contenedor del título: puede encogerse dentro del flex (min-width:0 es clave) */
+  }
+  main .workshop .invertido .titulo-wrapper {
     flex: 1 1 auto;
     min-width: 0; /* CRÍTICO para que el h2 se reduzca y no empuje el logo */
     display: flex;
@@ -641,8 +835,10 @@ footer .container .redes-sociales a:hover {
     text-align: left;
     box-sizing: border-box;
   }
-  /* h2 y h3: tamaños/espaciado para que queden alineados y con distinto peso */
-  .workshop .invertido .titulo-wrapper .titulo-seccion {
+  main {
+    /* h2 y h3: tamaños/espaciado para que queden alineados y con distinto peso */
+  }
+  main .workshop .invertido .titulo-wrapper .titulo-seccion {
     margin: 0;
     padding: 0;
     font-size: 2rem; /* tamaño grande similar a foto 2 */
@@ -650,21 +846,39 @@ footer .container .redes-sociales a:hover {
     white-space: normal;
     word-break: break-word;
   }
-  .workshop .invertido .titulo-wrapper h3 {
+  main .workshop .invertido .titulo-wrapper h3 {
     margin: 0.35rem 0 0 0;
     font-size: 1.4rem;
   }
-  /* Ajuste de textos/párrafos para que no toquen bordes */
-  .workshop .invertido .invertido-texto {
+  main {
+    /* Ajuste de textos/párrafos para que no toquen bordes */
+  }
+  main .workshop .invertido .invertido-texto {
     padding-left: 0;
     padding-right: 0;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     box-sizing: border-box;
   }
-  /* Seguridad: si alguna regla de Bootstrap o global fuerza overflow, lo anulamos aquí */
-  .workshop, .workshop .invertido {
+  main {
+    /* Seguridad: si alguna regla de Bootstrap o global fuerza overflow, lo anulamos aquí */
+  }
+  main .workshop, main .workshop .invertido {
     overflow-x: visible;
+  }
+  main .incluye .row {
+    justify-content: center;
+  }
+  main .incluye .row > .col-12.col-md-4 {
+    flex: 0 0 calc(50% - 1rem) !important;
+    max-width: calc(50% - 1rem) !important;
+    box-sizing: border-box;
+  }
+  main .incluye .card-incluye .pdf-images {
+    bottom: -5rem;
+  }
+  main .incluye .card-incluye .pdf-img {
+    width: 64%;
   }
 }
 @media (max-width: 583px) {
@@ -753,11 +967,79 @@ footer .container .redes-sociales a:hover {
   main .incluye h2 {
     padding: 10% 0 10% 0;
   }
+  main .incluye .card-incluye .pdf-images {
+    position: absolute;
+    top: 16px; /* distancia desde el borde superior del card */
+    right: 18px; /* distancia desde el borde derecho del card */
+    left: auto; /* anular left:50% anterior */
+    bottom: auto;
+    transform: none; /* quitar translateX que lo movía fuera */
+    display: flex;
+    align-items: flex-end;
+    gap: 0;
+    z-index: 5; /* encima del card pero debajo de iconos si hace falta */
+  }
+  main .incluye .card-incluye {
+    /* tamaño de las miniaturas en mobile */
+  }
+  main .incluye .card-incluye .pdf-img {
+    width: 70px; /* tamaño fijo más predecible en mobile */
+    height: auto;
+    transform-origin: bottom center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  }
+  main .incluye .card-incluye {
+    /* rotaciones ajustadas para que sigan pareciendo un abanico */
+  }
+  main .incluye .card-incluye .pdf-img-1 {
+    transform: rotate(-8deg) translateY(8px);
+    margin-right: -18px; /* solapamiento controlado */
+    z-index: 2;
+  }
+  main .incluye .card-incluye .pdf-img-2 {
+    transform: rotate(6deg) translateY(4px);
+    z-index: 1;
+  }
   main .para-quien-es .emoji {
     font-size: 2rem;
   }
   main .para-quien-es h2 {
     font-size: 2rem;
+  }
+  main .portadaacro {
+    position: static;
+    height: 55vh;
+    object-position: 15% bottom;
+  }
+  main .hero-acro-texto {
+    padding: 1.5rem 0 2.5rem;
+  }
+  main .hero-acro-texto h2 img {
+    max-width: 75%;
+  }
+  main .hero-acro-texto p {
+    font-size: 1rem;
+  }
+  main .testimonio {
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+  main .testimonio .testimonio-foto {
+    width: 140px;
+    height: 140px;
+    border-width: 4px;
+    margin-bottom: 1rem;
+  }
+  main .testimonio h3 {
+    font-size: 2.1rem;
+  }
+  main .testimonio h3 span {
+    display: block;
+    font-size: 1.1rem;
+    margin-top: 0.25rem;
+  }
+  main .testimonio blockquote p {
+    font-size: 1rem;
   }
 }
 * {

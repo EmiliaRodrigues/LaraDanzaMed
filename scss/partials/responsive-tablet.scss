@@ -97,30 +97,25 @@
         }
         .hero-acro-texto {
             h2 img {
-                max-width: 85%;
+                max-width: 70%;
             }
-
             p {
-                font-size: 1.05rem;
+                font-size: 1rem;
             }
         }
         .testimonio {
             padding: 2rem 0;
-
             .testimonio-foto {
                 width: 170px;
                 height: 170px;
                 border-width: 5px;
             }
-
             h3 {
                 font-size: 2.6rem;
-
                 span {
                     font-size: 1.2rem;
                 }
             }
-
             blockquote p {
                 font-size: 1.05rem;
             }

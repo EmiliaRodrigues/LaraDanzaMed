@@ -516,7 +516,7 @@ main .hero-acro-texto h2 img {
   max-width: 100%;
 }
 main .acro-testimonios {
-  background-color: #847d86;
+  background-color: #8B878C;
   color: #fff;
   padding: 4rem 0;
 }
@@ -616,7 +616,7 @@ main .acro-clases .clase-card p {
   font-size: 1.2rem;
 }
 main .acro-cierre {
-  background-color: #d9d9d9;
+  background-color: #8B878C;
   padding: 6rem 0;
 }
 main .acro-cierre h2 {
@@ -731,10 +731,10 @@ footer .container .redes-sociales a:hover {
     object-position: 20% bottom;
   }
   main .hero-acro-texto h2 img {
-    max-width: 85%;
+    max-width: 70%;
   }
   main .hero-acro-texto p {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
   main .testimonio {
     padding: 2rem 0;
@@ -912,6 +912,9 @@ footer .container .redes-sociales a:hover {
     font-size: 3rem;
     text-align: center;
   }
+  main .sobre-mi-podcast {
+    padding-top: 5%;
+  }
   main .sobre-mi-podcast .sobre-mi .carusel .carousel-inner img {
     padding-bottom: 10%;
   }
@@ -1006,18 +1009,21 @@ footer .container .redes-sociales a:hover {
   main .para-quien-es h2 {
     font-size: 2rem;
   }
-  main .portadaacro {
-    position: static;
-    height: 55vh;
-    object-position: 15% bottom;
+  main .acro-inicio {
+    min-height: calc(100vh - 60px);
+    min-height: calc(100svh - 60px);
+    align-items: flex-start;
   }
-  main .hero-acro-texto {
+  main .acro-inicio .portadaacro {
+    object-position: 20% bottom;
+  }
+  main .acro-inicio .hero-acro-texto {
     padding: 1.5rem 0 2.5rem;
   }
-  main .hero-acro-texto h2 img {
+  main .acro-inicio .hero-acro-texto h2 img {
     max-width: 75%;
   }
-  main .hero-acro-texto p {
+  main .acro-inicio .hero-acro-texto p {
     font-size: 1rem;
   }
   main .testimonio {
@@ -1031,15 +1037,26 @@ footer .container .redes-sociales a:hover {
     margin-bottom: 1rem;
   }
   main .testimonio h3 {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
   }
   main .testimonio h3 span {
-    display: block;
-    font-size: 1.1rem;
-    margin-top: 0.25rem;
+    font-size: 1rem;
   }
   main .testimonio blockquote p {
     font-size: 1rem;
+  }
+  main .acro-problema .problema-titulo h2 {
+    font-size: 2rem;
+  }
+  main .acro-problema .problema-franja .problema-texto {
+    padding: 3rem 4rem;
+  }
+  main .acro-problema .problema-franja .problema-texto p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  main .acro-cierre h2 {
+    font-size: 2.5rem;
   }
 }
 * {

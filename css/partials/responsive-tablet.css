@@ -71,10 +71,10 @@
     object-position: 20% bottom;
   }
   main .hero-acro-texto h2 img {
-    max-width: 85%;
+    max-width: 70%;
   }
   main .hero-acro-texto p {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
   main .testimonio {
     padding: 2rem 0;

@@ -365,7 +365,6 @@ main{
             align-items: center; 
             padding-top: 3%;
             padding-bottom: 3%;
-            // gap: 5px;
             .emoji{
                 font-size: 2.8rem;
                 margin: 0;
@@ -438,7 +437,7 @@ main{
         max-width: 100%;
     }
     .acro-testimonios {
-        background-color: #847d86;
+        background-color:  variables.$colorfondo;
         color: #fff;
         padding: 4rem 0;
         .testimonio {
@@ -470,7 +469,7 @@ main{
             background-color: #ebe8e9;
             padding: 3rem 0;
             h2 {
-                color: #b0001e;
+                color: variables.$coloracro;
                 font-size: 3.2rem;
                 line-height: 1.05;
                 margin: 0;
@@ -481,7 +480,7 @@ main{
         }
         .problema-franja {
             .problema-texto {
-                background-color: #b0001e;
+                background-color:  variables.$coloracro;
                 color: #fff;
                 display: flex;
                 align-items: center;
@@ -535,7 +534,7 @@ main{
 
         .clase-card {
             background-color: #fff;
-            border: 4px solid #b0001e;
+            border: 4px solid  variables.$coloracro;
             border-radius: 40px;
             min-height: 180px;
             padding: 2rem;
@@ -550,10 +549,10 @@ main{
         }
     }
     .acro-cierre {
-        background-color: #d9d9d9;
+        background-color: variables.$colorfondo;;
         padding: 6rem 0;
         h2 {
-            color: #b0001e;
+            color:  variables.$coloracro;
             font-size: 4rem;
             line-height: 1.05;
         }

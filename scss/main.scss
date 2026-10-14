@@ -14,10 +14,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: variables.$colorprincipal;
-}
+// body{
+//   background-color: variables.$colorprincipal;
+// }
+//al resalatar que sean de ese color
 ::selection {
     background-color: variables.$colorsecundario; 
     color: variables.$colorletras;
+}
+.pagina-acro, .pagina-suspendida{
+  background-color: variables.$colorfondo;
 }

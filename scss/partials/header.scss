@@ -27,10 +27,10 @@ header{
             a{
                 text-decoration: none;
                 color: azure;
-                text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); 
+                text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6); 
                 &:hover {
                     transform: scale(1.05);
-                    color: #f49ee6;
+                    color: #9b88d2;;
                 }
             }
         }
@@ -46,10 +46,10 @@ header{
                 a {
                     text-decoration: none;
                     color: azure;
-                    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); 
+                    text-shadow: 4px 4px 4px rgba(0.5, 0.5, 0.5, 0.5); 
                     &:hover {
                         transform: scale(1.05);
-                        color: #f49ee6;
+                        color: variables.$colorprincipal;
                     }
                 }
             }

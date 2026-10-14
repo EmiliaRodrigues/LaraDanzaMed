@@ -32,9 +32,6 @@
     object-fit: cover;
     object-position: center;
   }
-  main .workshop {
-    padding-top: 3%;
-  }
   main .foto1 img {
     height: 100%;
     object-fit: cover;

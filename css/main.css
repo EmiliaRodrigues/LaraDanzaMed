@@ -28,11 +28,11 @@ header nav .navbar-brand {
 header nav .navbar-brand a {
   text-decoration: none;
   color: azure;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 header nav .navbar-brand a:hover {
   transform: scale(1.05);
-  color: #f49ee6;
+  color: #9b88d2;
 }
 header nav .navbar-nav {
   display: flex;
@@ -48,11 +48,11 @@ header nav .navbar-nav li {
 header nav .navbar-nav li a {
   text-decoration: none;
   color: azure;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 4px 4px 4px rgba(0.5, 0.5, 0.5, 0.5);
 }
 header nav .navbar-nav li a:hover {
   transform: scale(1.05);
-  color: #f49ee6;
+  color: #67549f;
 }
 
 .video-inicio {
@@ -92,6 +92,13 @@ header nav .navbar-nav li a:hover {
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   color: azure;
 }
+.video-inicio::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(40, 6, 25, 0.2) 0%, rgba(40, 6, 25, 0.1) 40%, rgba(40, 6, 25, 0.1) 60%, rgba(40, 6, 25, 0.2) 100%);
+  pointer-events: none;
+}
 
 main .row {
   margin-left: 0 !important;
@@ -125,7 +132,7 @@ main button {
   border-radius: 10px;
   margin: 5%;
   cursor: pointer;
-  background: linear-gradient(90deg, #7F55B1, #732952);
+  background: linear-gradient(90deg, #67549f, #732952);
   transition: all 0.6s ease;
   border: 10%;
   border: 1px solid #FFE1E0;
@@ -141,7 +148,7 @@ main button:active {
   box-shadow: 0 4px 15px rgb(234, 149, 212);
 }
 main .sobre-mi-podcast {
-  background-color: #8B878C;
+  background-color: #aca8ac;
 }
 main .sobre-mi-podcast .sobre-mi-texto .titulo-seccion {
   margin-top: 10%;
@@ -211,74 +218,8 @@ main .danza-anatomia .danza-anatomia-texto p {
   color: azure;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
-main .workshop {
-  background-color: #8B878C;
-}
-main .workshop .invertido video {
-  padding: 0;
-  margin-top: 10%;
-  width: 100%;
-  height: 500px;
-  border-radius: 30px;
-}
-main .workshop .invertido .workshop-header {
-  gap: 1rem; /* espacio entre logo y título */
-  align-items: center;
-  flex-wrap: nowrap; /* ¡no permitir que baje el logo! */
-  width: 100%;
-  box-sizing: border-box;
-}
-main .workshop .invertido {
-  /* Wrapper del logo: evita que el logo crezca o se mueva */
-}
-main .workshop .invertido .logo-wrapper {
-  flex: 0 0 auto; /* no crece, mantiene su tamaño máximo */
-  display: flex;
-  align-items: center;
-}
-main .workshop .invertido {
-  /* Logo responsivo con límite máximo */
-}
-main .workshop .invertido .logo-workshop {
-  display: block;
-  width: 100%;
-  max-width: 160px; /* ajusta a 120/140/180 según prefieras */
-  height: auto;
-  border-radius: 10px;
-  flex-shrink: 0; /* evitar que el logo se reduzca demasiado */
-}
-main .workshop .invertido {
-  /* Contenedor del título: puede encogerse y envolver texto */
-}
-main .workshop .invertido .titulo-wrapper {
-  flex: 1 1 auto; /* ocupa el espacio restante */
-  min-width: 0; /* CRÍTICO para permitir que el texto se reduzca en flexbox */
-  overflow: hidden;
-}
-main .workshop .invertido h2 {
-  font-size: 3.5rem;
-  margin: 0;
-  white-space: normal;
-  word-break: break-word;
-  overflow-wrap: break-word;
-}
-main .testimonios .titulo-seccion {
-  padding-top: 5%;
-  text-align: center;
-}
-main .testimonios .texto-testimonios {
-  padding: 3%;
-  background-color: #732952;
-  border-radius: 50px;
-  margin: 2%;
-  height: 100%;
-}
-main .testimonios .texto-testimonios p {
-  text-align: center;
-  color: #FFE1E0;
-}
 main .ofrece {
-  background-color: #8B878C;
+  background-color: #aca8ac;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -302,19 +243,13 @@ main .ofrece .card-footer .text-body-secondary {
   color: #FFE1E0 !important;
 }
 main .reserva {
-  background-color: #8B878C;
+  background-color: #aca8ac;
 }
 main .reserva .reserva-texto {
   padding: 3%;
 }
-main .algo-te-suena {
-  background-color: #8B878C;
-}
-main .algo-te-suena .emoji {
-  font-size: 4rem;
-}
 main .foto1 {
-  background-color: #8B878C;
+  background-color: #aca8ac;
   position: relative;
   width: 100%;
   height: 700px;
@@ -349,10 +284,10 @@ main .foto1 .foto1-texto p {
 }
 main .despues-de-curso {
   padding: 3%;
-  background-color: #8B878C;
+  background-color: #aca8ac;
 }
 main .foto2 {
-  background-color: #8B878C;
+  background-color: #aca8ac;
   position: relative;
   width: 100%;
   height: 100dvh;
@@ -390,13 +325,13 @@ main .foto2 .foto2-texto p {
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 main .incluye {
-  background-color: #8B878C;
+  background-color: #aca8ac;
 }
 main .incluye h2 {
   padding-top: 3%;
 }
 main .incluye .card-incluye {
-  background: linear-gradient(180deg, #71568f, #7F55B1);
+  background: linear-gradient(180deg, #71568f, #67549f);
   border-radius: 10px;
   padding: 2rem;
   text-align: center;
@@ -441,7 +376,7 @@ main .incluye .card-incluye .pdf-img-2 {
   z-index: 1;
 }
 main .para-quien-es {
-  background-color: #8B878C;
+  background-color: #aca8ac;
   padding: 3%;
 }
 main .para-quien-es .titulo {
@@ -464,7 +399,7 @@ main .para-quien-es .titulo h2 {
   line-height: 1;
 }
 main .preguntas-frecuentes {
-  background-color: #8B878C;
+  background-color: #aca8ac;
   padding: 3%;
 }
 main .preguntas-frecuentes .accordion-item {
@@ -516,7 +451,7 @@ main .hero-acro-texto h2 img {
   max-width: 100%;
 }
 main .acro-testimonios {
-  background-color: #8B878C;
+  background-color: #aca8ac;
   color: #fff;
   padding: 4rem 0;
 }
@@ -554,7 +489,8 @@ main .acro-problema .problema-titulo h2 {
   margin: 0;
 }
 main .acro-problema .problema-titulo h2 + h2 {
-  margin-top: 3rem;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 main .acro-problema .problema-franja .problema-texto {
   background-color: #b0001e;
@@ -595,7 +531,7 @@ main .acro-clases .container {
   position: relative;
 }
 main .acro-clases h2 {
-  color: #fff;
+  color: #b0001e;
   font-size: 3rem;
   line-height: 1;
   max-width: 30rem;
@@ -616,7 +552,7 @@ main .acro-clases .clase-card p {
   font-size: 1.2rem;
 }
 main .acro-cierre {
-  background-color: #8B878C;
+  background-color: #aca8ac;
   padding: 6rem 0;
 }
 main .acro-cierre h2 {
@@ -627,7 +563,7 @@ main .acro-cierre h2 {
 
 footer {
   padding: 3%;
-  background-color: #7F55B1;
+  background-color: #67549f;
 }
 footer p {
   font-family: "Prompt", sans-serif;
@@ -692,9 +628,6 @@ footer .container .redes-sociales a:hover {
     object-fit: cover;
     object-position: center;
   }
-  main .workshop {
-    padding-top: 3%;
-  }
   main .foto1 img {
     height: 100%;
     object-fit: cover;
@@ -757,114 +690,6 @@ footer .container .redes-sociales a:hover {
 @media (min-width: 767px) and (max-width: 991px) {
   main .sobre-mi-podcast .podcast img {
     width: 100%;
-  }
-  main {
-    /* Aseguramos que el row no haga wrap en este rango */
-  }
-  main .workshop .invertido .row {
-    display: flex; /* en caso de que alguna regla lo quite */
-    flex-wrap: nowrap; /* importante: no apilar */
-    gap: 2rem; /* separación entre columnas */
-    align-items: flex-start; /* alinear al tope para que H2/H3 queden juntos */
-    box-sizing: border-box;
-  }
-  main {
-    /* Forzar columnas 50% cada una (considerando gap) */
-  }
-  main .workshop .invertido .row > .col-12.col-md-6 {
-    flex: 0 0 calc(50% - 1rem);
-    max-width: calc(50% - 1rem);
-    box-sizing: border-box;
-    order: 0; /* evita reordenamientos inesperados */
-  }
-  main {
-    /* VIDEO: responsivo pero con límite de altura para no estirar demasiado */
-  }
-  main .workshop .invertido .row > .col-12.col-md-6 video {
-    width: 100%;
-    height: auto;
-    max-height: 65vh; /* ajusta si querés el video más/menos alto */
-    object-fit: cover;
-    display: block;
-    border-radius: 30px;
-    margin: 0;
-    padding: 0;
-  }
-  main {
-    /* HEADER interno: logo + título en la misma fila */
-  }
-  main .workshop .invertido .workshop-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; /* NO permitir wrap */
-    gap: 1rem;
-    align-items: flex-start; /* TOP align para que H2 y H3 queden juntos */
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 3%;
-  }
-  main {
-    /* Wrapper del logo: tamaño fijo controlado para que no empuje */
-  }
-  main .workshop .invertido .logo-wrapper {
-    flex: 0 0 auto;
-    width: 140px; /* cambia a 120/160 si preferís */
-    min-width: 120px;
-    max-width: 160px;
-    display: flex;
-    align-items: center;
-  }
-  main .workshop .invertido .logo-wrapper .logo-workshop,
-  main .workshop .invertido .logo-workshop {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 10px;
-    display: block;
-  }
-  main {
-    /* Contenedor del título: puede encogerse dentro del flex (min-width:0 es clave) */
-  }
-  main .workshop .invertido .titulo-wrapper {
-    flex: 1 1 auto;
-    min-width: 0; /* CRÍTICO para que el h2 se reduzca y no empuje el logo */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
-    box-sizing: border-box;
-  }
-  main {
-    /* h2 y h3: tamaños/espaciado para que queden alineados y con distinto peso */
-  }
-  main .workshop .invertido .titulo-wrapper .titulo-seccion {
-    margin: 0;
-    padding: 0;
-    font-size: 2rem; /* tamaño grande similar a foto 2 */
-    line-height: 1;
-    white-space: normal;
-    word-break: break-word;
-  }
-  main .workshop .invertido .titulo-wrapper h3 {
-    margin: 0.35rem 0 0 0;
-    font-size: 1.4rem;
-  }
-  main {
-    /* Ajuste de textos/párrafos para que no toquen bordes */
-  }
-  main .workshop .invertido .invertido-texto {
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    box-sizing: border-box;
-  }
-  main {
-    /* Seguridad: si alguna regla de Bootstrap o global fuerza overflow, lo anulamos aquí */
-  }
-  main .workshop, main .workshop .invertido {
-    overflow-x: visible;
   }
   main .incluye .row {
     justify-content: center;
@@ -931,26 +756,6 @@ footer .container .redes-sociales a:hover {
   }
   main .danza-anatomia .danza-anatomia-texto p {
     font-size: 1.4rem;
-  }
-  main .workshop {
-    padding-top: 3%;
-  }
-  main .workshop .invertido h2 {
-    font-size: 2.5rem;
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-    text-align: left !important;
-  }
-  main .workshop .invertido h3 {
-    font-size: 1.4rem;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  main .workshop .invertido .logo-workshop {
-    border-radius: 10px;
-  }
-  main .workshop .invertido .invertido-texto {
-    padding-top: 3%;
   }
   main .foto1 img {
     height: 100%;
@@ -1065,13 +870,13 @@ footer .container .redes-sociales a:hover {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #7F55B1;
-}
-
 ::selection {
   background-color: #71568f;
   color: #FFE1E0;
+}
+
+.pagina-acro, .pagina-suspendida {
+  background-color: #aca8ac;
 }
 
 /*# sourceMappingURL=main.css.map */

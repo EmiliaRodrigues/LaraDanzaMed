@@ -38,4 +38,17 @@
                 color: azure;
             }
         }
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(40, 6, 25, 0.20) 0%,
+                rgba(40, 6, 25, 0.10) 40%,
+                rgba(40, 6, 25, 0.10) 60%,
+                rgba(40, 6, 25, 0.20) 100%
+            );
+            pointer-events: none;   // no bloquea los clicks
+        }
     }

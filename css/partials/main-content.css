@@ -32,7 +32,7 @@ main button {
   border-radius: 10px;
   margin: 5%;
   cursor: pointer;
-  background: linear-gradient(90deg, #7F55B1, #732952);
+  background: linear-gradient(90deg, #67549f, #732952);
   transition: all 0.6s ease;
   border: 10%;
   border: 1px solid #FFE1E0;
@@ -48,7 +48,7 @@ main button:active {
   box-shadow: 0 4px 15px rgb(234, 149, 212);
 }
 main .sobre-mi-podcast {
-  background-color: #8B878C;
+  background-color: #aca8ac;
 }
 main .sobre-mi-podcast .sobre-mi-texto .titulo-seccion {
   margin-top: 10%;
@@ -118,74 +118,8 @@ main .danza-anatomia .danza-anatomia-texto p {
   color: azure;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
-main .workshop {
-  background-color: #8B878C;
-}
-main .workshop .invertido video {
-  padding: 0;
-  margin-top: 10%;
-  width: 100%;
-  height: 500px;
-  border-radius: 30px;
-}
-main .workshop .invertido .workshop-header {
-  gap: 1rem; /* espacio entre logo y título */
-  align-items: center;
-  flex-wrap: nowrap; /* ¡no permitir que baje el logo! */
-  width: 100%;
-  box-sizing: border-box;
-}
-main .workshop .invertido {
-  /* Wrapper del logo: evita que el logo crezca o se mueva */
-}
-main .workshop .invertido .logo-wrapper {
-  flex: 0 0 auto; /* no crece, mantiene su tamaño máximo */
-  display: flex;
-  align-items: center;
-}
-main .workshop .invertido {
-  /* Logo responsivo con límite máximo */
-}
-main .workshop .invertido .logo-workshop {
-  display: block;
-  width: 100%;
-  max-width: 160px; /* ajusta a 120/140/180 según prefieras */
-  height: auto;
-  border-radius: 10px;
-  flex-shrink: 0; /* evitar que el logo se reduzca demasiado */
-}
-main .workshop .invertido {
-  /* Contenedor del título: puede encogerse y envolver texto */
-}
-main .workshop .invertido .titulo-wrapper {
-  flex: 1 1 auto; /* ocupa el espacio restante */
-  min-width: 0; /* CRÍTICO para permitir que el texto se reduzca en flexbox */
-  overflow: hidden;
-}
-main .workshop .invertido h2 {
-  font-size: 3.5rem;
-  margin: 0;
-  white-space: normal;
-  word-break: break-word;
-  overflow-wrap: break-word;
-}
-main .testimonios .titulo-seccion {
-  padding-top: 5%;
-  text-align: center;
-}
-main .testimonios .texto-testimonios {
-  padding: 3%;
-  background-color: #732952;
-  border-radius: 50px;
-  margin: 2%;
-  height: 100%;
-}
-main .testimonios .texto-testimonios p {
-  text-align: center;
-  color: #FFE1E0;
-}
 main .ofrece {
-  background-color: #8B878C;
+  background-color: #aca8ac;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -209,19 +143,13 @@ main .ofrece .card-footer .text-body-secondary {
   color: #FFE1E0 !important;
 }
 main .reserva {
-  background-color: #8B878C;
+  background-color: #aca8ac;
 }
 main .reserva .reserva-texto {
   padding: 3%;
 }
-main .algo-te-suena {
-  background-color: #8B878C;
-}
-main .algo-te-suena .emoji {
-  font-size: 4rem;
-}
 main .foto1 {
-  background-color: #8B878C;
+  background-color: #aca8ac;
   position: relative;
   width: 100%;
   height: 700px;
@@ -256,10 +184,10 @@ main .foto1 .foto1-texto p {
 }
 main .despues-de-curso {
   padding: 3%;
-  background-color: #8B878C;
+  background-color: #aca8ac;
 }
 main .foto2 {
-  background-color: #8B878C;
+  background-color: #aca8ac;
   position: relative;
   width: 100%;
   height: 100dvh;
@@ -297,13 +225,13 @@ main .foto2 .foto2-texto p {
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 main .incluye {
-  background-color: #8B878C;
+  background-color: #aca8ac;
 }
 main .incluye h2 {
   padding-top: 3%;
 }
 main .incluye .card-incluye {
-  background: linear-gradient(180deg, #71568f, #7F55B1);
+  background: linear-gradient(180deg, #71568f, #67549f);
   border-radius: 10px;
   padding: 2rem;
   text-align: center;
@@ -348,7 +276,7 @@ main .incluye .card-incluye .pdf-img-2 {
   z-index: 1;
 }
 main .para-quien-es {
-  background-color: #8B878C;
+  background-color: #aca8ac;
   padding: 3%;
 }
 main .para-quien-es .titulo {
@@ -371,7 +299,7 @@ main .para-quien-es .titulo h2 {
   line-height: 1;
 }
 main .preguntas-frecuentes {
-  background-color: #8B878C;
+  background-color: #aca8ac;
   padding: 3%;
 }
 main .preguntas-frecuentes .accordion-item {
@@ -423,7 +351,7 @@ main .hero-acro-texto h2 img {
   max-width: 100%;
 }
 main .acro-testimonios {
-  background-color: #8B878C;
+  background-color: #aca8ac;
   color: #fff;
   padding: 4rem 0;
 }
@@ -461,7 +389,8 @@ main .acro-problema .problema-titulo h2 {
   margin: 0;
 }
 main .acro-problema .problema-titulo h2 + h2 {
-  margin-top: 3rem;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 main .acro-problema .problema-franja .problema-texto {
   background-color: #b0001e;
@@ -502,7 +431,7 @@ main .acro-clases .container {
   position: relative;
 }
 main .acro-clases h2 {
-  color: #fff;
+  color: #b0001e;
   font-size: 3rem;
   line-height: 1;
   max-width: 30rem;
@@ -523,7 +452,7 @@ main .acro-clases .clase-card p {
   font-size: 1.2rem;
 }
 main .acro-cierre {
-  background-color: #8B878C;
+  background-color: #aca8ac;
   padding: 6rem 0;
 }
 main .acro-cierre h2 {

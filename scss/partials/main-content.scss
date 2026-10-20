@@ -23,12 +23,10 @@ main{
         font-family:  variables.$letraparrafos;
         color: variables.$colorletraoscuro;
     }
-    .bnt-inicio, .btn-acro{
-        a{
-            font-family: variables.$letraparrafos;
-            color: variables.$colorletras;
-            text-decoration: none;
-        }
+    .btn-inicio, .btn-acro{
+        font-family: variables.$letraparrafos;
+        color: variables.$colorletras;
+        text-decoration: none;
         padding: 2%;
         border-radius: 10px;
         margin: 5%; 
@@ -80,12 +78,15 @@ main{
                 border-radius: 20px;
             }
             .botones-podcast{
-                button{
+                .btn-inicio{
                     margin: 3%;
+                    min-width: 55%;
+                    text-align: center;
                 }
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 5%;
+                align-items: center; 
             }
         }
     }

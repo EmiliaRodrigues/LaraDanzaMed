@@ -119,12 +119,10 @@ main p {
   font-family: "Prompt", sans-serif;
   color: #280619;
 }
-main .bnt-inicio a, main .btn-acro a {
+main .btn-inicio, main .btn-acro {
   font-family: "Prompt", sans-serif;
   color: #FFE1E0;
   text-decoration: none;
-}
-main .bnt-inicio, main .btn-acro {
   padding: 2%;
   border-radius: 10px;
   margin: 5%;
@@ -134,12 +132,12 @@ main .bnt-inicio, main .btn-acro {
   border: 10%;
   border: 1px solid #FFE1E0;
 }
-main .bnt-inicio:hover, main .btn-acro:hover {
+main .btn-inicio:hover, main .btn-acro:hover {
   background: linear-gradient(90deg, #71568f, #732952);
   box-shadow: 0 4px 15px rgb(234, 149, 212);
   transform: scale(1.05);
 }
-main .bnt-inicio:active, main .btn-acro:active {
+main .btn-inicio:active, main .btn-acro:active {
   background: linear-gradient(90deg, #71568f, #732952);
   transform: scale(0.98);
   box-shadow: 0 4px 15px rgb(234, 149, 212);
@@ -174,13 +172,16 @@ main .sobre-mi-podcast .podcast img {
   width: 70%;
   border-radius: 20px;
 }
-main .sobre-mi-podcast .podcast .botones-podcast button {
+main .sobre-mi-podcast .podcast .botones-podcast .btn-inicio {
   margin: 3%;
+  min-width: 55%;
+  text-align: center;
 }
 main .sobre-mi-podcast .podcast .botones-podcast {
   display: flex;
   flex-direction: column;
   margin-bottom: 5%;
+  align-items: center;
 }
 main .danza-anatomia {
   position: relative;

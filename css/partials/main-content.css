@@ -22,12 +22,12 @@ main p {
   font-family: "Prompt", sans-serif;
   color: #280619;
 }
-main button a {
+main button a, main .btn-acro a {
   font-family: "Prompt", sans-serif;
   color: #FFE1E0;
   text-decoration: none;
 }
-main button {
+main button, main .btn-acro {
   padding: 2%;
   border-radius: 10px;
   margin: 5%;
@@ -37,12 +37,12 @@ main button {
   border: 10%;
   border: 1px solid #FFE1E0;
 }
-main button:hover {
+main button:hover, main .btn-acro:hover {
   background: linear-gradient(90deg, #71568f, #732952);
   box-shadow: 0 4px 15px rgb(234, 149, 212);
   transform: scale(1.05);
 }
-main button:active {
+main button:active, main .btn-acro:active {
   background: linear-gradient(90deg, #71568f, #732952);
   transform: scale(0.98);
   box-shadow: 0 4px 15px rgb(234, 149, 212);
@@ -329,6 +329,11 @@ main .preguntas-frecuentes .accordion-item button:not(.collapsed)::after {
 main .preguntas-frecuentes .accordion-item .accordion-body {
   color: #FFE1E0;
   font-family: "Prompt", sans-serif;
+}
+main .btn-acro {
+  font-family: "Prompt", sans-serif;
+  color: #FFE1E0;
+  text-decoration: none;
 }
 main .acro-inicio {
   position: relative;

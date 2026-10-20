@@ -147,11 +147,14 @@
   main .acro-problema .problema-titulo h2 {
     font-size: 2rem;
   }
+  main .acro-problema .problema-titulo h2 + h2 {
+    font-size: 1.3rem;
+  }
   main .acro-problema .problema-franja .problema-texto {
     padding: 3rem 4rem;
   }
   main .acro-problema .problema-franja .problema-texto p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
   }
   main .acro-cierre h2 {

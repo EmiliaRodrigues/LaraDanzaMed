@@ -23,7 +23,7 @@ main{
         font-family:  variables.$letraparrafos;
         color: variables.$colorletraoscuro;
     }
-    button{
+    button , .btn-acro{
         a{
             font-family: variables.$letraparrafos;
             color: variables.$colorletras;
@@ -339,6 +339,11 @@ main{
         }
     }
     //ACRO
+    .btn-acro{
+        font-family: variables.$letraparrafos;
+        color: variables.$colorletras;
+        text-decoration: none;
+    }
     .acro-inicio {
         position: relative;
         min-height: 500px;

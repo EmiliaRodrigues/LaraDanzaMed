@@ -17,9 +17,6 @@ header nav .navbar-toggler:focus {
 header nav .navbar-toggler:hover {
   transform: scale(1.05);
 }
-header nav .navbar-toggler:hover .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23f49ee6' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
 header nav .navbar-brand {
   font-family: "Catamaran", sans-serif;
   font-weight: 700;
@@ -122,12 +119,12 @@ main p {
   font-family: "Prompt", sans-serif;
   color: #280619;
 }
-main button a, main .btn-acro a {
+main .bnt-inicio a, main .btn-acro a {
   font-family: "Prompt", sans-serif;
   color: #FFE1E0;
   text-decoration: none;
 }
-main button, main .btn-acro {
+main .bnt-inicio, main .btn-acro {
   padding: 2%;
   border-radius: 10px;
   margin: 5%;
@@ -137,12 +134,12 @@ main button, main .btn-acro {
   border: 10%;
   border: 1px solid #FFE1E0;
 }
-main button:hover, main .btn-acro:hover {
+main .bnt-inicio:hover, main .btn-acro:hover {
   background: linear-gradient(90deg, #71568f, #732952);
   box-shadow: 0 4px 15px rgb(234, 149, 212);
   transform: scale(1.05);
 }
-main button:active, main .btn-acro:active {
+main .bnt-inicio:active, main .btn-acro:active {
   background: linear-gradient(90deg, #71568f, #732952);
   transform: scale(0.98);
   box-shadow: 0 4px 15px rgb(234, 149, 212);
@@ -693,6 +690,28 @@ footer .container .redes-sociales a:hover {
   }
 }
 @media (min-width: 767px) and (max-width: 991px) {
+  header nav .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav .navbar-brand {
+    margin: 0 0 0.75rem;
+    text-align: center;
+  }
+  header nav .navbar-collapse {
+    flex-grow: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  header nav .navbar-nav {
+    margin: 0 !important;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+  }
+  header nav .navbar-nav li a {
+    white-space: nowrap;
+  }
   main .sobre-mi-podcast .podcast img {
     width: 100%;
   }

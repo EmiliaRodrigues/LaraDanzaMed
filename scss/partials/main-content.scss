@@ -23,7 +23,7 @@ main{
         font-family:  variables.$letraparrafos;
         color: variables.$colorletraoscuro;
     }
-    .btn-inicio, .btn-acro{
+    .btn-inicio, .btn-acro, .btn-macaco{
         font-family: variables.$letraparrafos;
         color: variables.$colorletras;
         text-decoration: none;
@@ -487,5 +487,47 @@ main{
         }
     }
     //MACACO
-    
+    .macaco-inicio{
+        background-color: variables.$colorfondo;
+
+        .macaco-portada-foto img {
+            display: block;
+            width: 100%;
+            border-radius: 30px;
+            padding: 5%;
+        }
+
+        .macaco-etiqueta {
+            display: inline-block;
+            background-color: variables.$colormacaco;
+            color: variables.$colorfondo2;
+            font-size: 1.3rem;
+            padding: 0.3rem 0.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .macaco-propuesta{
+            background-color: variables.$colormacaco;
+            padding: 1rem 1rem;
+            margin: 2.5rem 0;
+            h2, p {
+                color: variables.$colorfondo2;
+            }
+            h2{
+                font-size: 3rem;
+                text-align: left;
+            }
+            p{
+                font-size: 1.5rem;
+                padding-left: 1.5rem;
+            }
+        }
+        .macaco-cta {
+            text-align: center;
+            .macaco-aviso {
+                font-size: 0.7rem;
+                margin-top: 0.8rem;
+            }
+        }
+    }
 }

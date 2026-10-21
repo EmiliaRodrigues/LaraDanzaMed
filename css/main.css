@@ -119,7 +119,7 @@ main p {
   font-family: "Prompt", sans-serif;
   color: #280619;
 }
-main .btn-inicio, main .btn-acro {
+main .btn-inicio, main .btn-acro, main .btn-macaco {
   font-family: "Prompt", sans-serif;
   color: #FFE1E0;
   text-decoration: none;
@@ -132,12 +132,12 @@ main .btn-inicio, main .btn-acro {
   border: 10%;
   border: 1px solid #FFE1E0;
 }
-main .btn-inicio:hover, main .btn-acro:hover {
+main .btn-inicio:hover, main .btn-acro:hover, main .btn-macaco:hover {
   background: linear-gradient(90deg, #71568f, #732952);
   box-shadow: 0 4px 15px rgb(234, 149, 212);
   transform: scale(1.05);
 }
-main .btn-inicio:active, main .btn-acro:active {
+main .btn-inicio:active, main .btn-acro:active, main .btn-macaco:active {
   background: linear-gradient(90deg, #71568f, #732952);
   transform: scale(0.98);
   box-shadow: 0 4px 15px rgb(234, 149, 212);
@@ -563,6 +563,46 @@ main .acro-cierre h2 {
   font-size: 4rem;
   line-height: 1.05;
 }
+main .macaco-inicio {
+  background-color: #aca8ac;
+}
+main .macaco-inicio .macaco-portada-foto img {
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  padding: 5%;
+}
+main .macaco-inicio .macaco-etiqueta {
+  display: inline-block;
+  background-color: #5683A8;
+  color: #ebe8e9;
+  font-size: 1.3rem;
+  padding: 0.3rem 0.6rem;
+  margin-bottom: 1rem;
+}
+main .macaco-inicio .macaco-propuesta {
+  background-color: #5683A8;
+  padding: 1rem 1rem;
+  margin: 2.5rem 0;
+}
+main .macaco-inicio .macaco-propuesta h2, main .macaco-inicio .macaco-propuesta p {
+  color: #ebe8e9;
+}
+main .macaco-inicio .macaco-propuesta h2 {
+  font-size: 3rem;
+  text-align: left;
+}
+main .macaco-inicio .macaco-propuesta p {
+  font-size: 1.5rem;
+  padding-left: 1.5rem;
+}
+main .macaco-inicio .macaco-cta {
+  text-align: center;
+}
+main .macaco-inicio .macaco-cta .macaco-aviso {
+  font-size: 0.7rem;
+  margin-top: 0.8rem;
+}
 
 footer {
   padding: 3%;
@@ -730,6 +770,27 @@ footer .container .redes-sociales a:hover {
   main .incluye .card-incluye .pdf-img {
     width: 64%;
   }
+  main .macaco-inicio .macaco-portada-foto {
+    flex: 0 0 55%;
+  }
+  main .macaco-inicio .macaco-portada-foto img {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+  }
+  main .macaco-inicio .macaco-portada-texto {
+    flex: 0 0 45%;
+  }
+  main .macaco-inicio .macaco-etiqueta,
+  main .macaco-inicio .macaco-intro,
+  main .macaco-inicio .macaco-propuesta p,
+  main .macaco-inicio .macaco-boton {
+    font-size: 1rem;
+  }
+  main .macaco-inicio .macaco-propuesta h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
 }
 @media (max-width: 583px) {
   header {
@@ -891,6 +952,26 @@ footer .container .redes-sociales a:hover {
   main .acro-cierre h2 {
     font-size: 2.5rem;
   }
+  main .macaco-inicio .macaco-etiqueta {
+    font-size: 1.2rem;
+  }
+  main .macaco-inicio .macaco-intro {
+    font-size: 1rem;
+  }
+  main .macaco-inicio .macaco-propuesta p {
+    font-size: 1.3rem;
+  }
+  main .macaco-inicio .macaco-propuesta {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  main .macaco-inicio .macaco-propuesta h2 {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+  main .macaco-inicio .macaco-propuesta p {
+    padding-left: 0.5rem;
+  }
 }
 * {
   margin: 0;
@@ -903,7 +984,7 @@ footer .container .redes-sociales a:hover {
   color: #FFE1E0;
 }
 
-.pagina-acro, .pagina-suspendida {
+.pagina-acro, .pagina-suspendida, .pagina-macaco {
   background-color: #aca8ac;
 }
 

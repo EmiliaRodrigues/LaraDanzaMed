@@ -160,6 +160,26 @@
   main .acro-cierre h2 {
     font-size: 2.5rem;
   }
+  main .macaco-inicio .macaco-etiqueta {
+    font-size: 1.2rem;
+  }
+  main .macaco-inicio .macaco-intro {
+    font-size: 1rem;
+  }
+  main .macaco-inicio .macaco-propuesta p {
+    font-size: 1.3rem;
+  }
+  main .macaco-inicio .macaco-propuesta {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  main .macaco-inicio .macaco-propuesta h2 {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+  main .macaco-inicio .macaco-propuesta p {
+    padding-left: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=responsive-mobile.css.map */

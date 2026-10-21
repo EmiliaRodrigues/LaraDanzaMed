@@ -56,5 +56,32 @@
                 }
             }
         }
+        //MACACO
+        .macaco-inicio{
+            .macaco-portada-foto {
+                flex: 0 0 55%;
+                // max-width: 55%;
+                img {
+                    max-width: none;
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+            .macaco-portada-texto {
+                flex: 0 0 45%;
+            }
+            .macaco-etiqueta,
+            .macaco-intro,
+            .macaco-propuesta p,
+            .macaco-boton {
+                font-size: 1rem;
+            }
+            .macaco-propuesta {
+                h2 {
+                    font-size: 2rem;
+                    text-align: left;
+                }
+            }
+        }
     }
 }

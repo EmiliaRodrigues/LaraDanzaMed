@@ -39,6 +39,27 @@
   main .incluye .card-incluye .pdf-img {
     width: 64%;
   }
+  main .macaco-inicio .macaco-portada-foto {
+    flex: 0 0 55%;
+  }
+  main .macaco-inicio .macaco-portada-foto img {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+  }
+  main .macaco-inicio .macaco-portada-texto {
+    flex: 0 0 45%;
+  }
+  main .macaco-inicio .macaco-etiqueta,
+  main .macaco-inicio .macaco-intro,
+  main .macaco-inicio .macaco-propuesta p,
+  main .macaco-inicio .macaco-boton {
+    font-size: 1rem;
+  }
+  main .macaco-inicio .macaco-propuesta h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=responsive-pantalla-grande.css.map */

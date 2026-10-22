@@ -603,6 +603,100 @@ main .macaco-inicio .macaco-cta .macaco-aviso {
   font-size: 0.7rem;
   margin-top: 0.8rem;
 }
+main .macaco-era {
+  padding: 3rem 0 4rem;
+}
+main .macaco-era h2 {
+  text-align: center;
+  line-height: 1;
+  padding-bottom: 3rem;
+}
+main .macaco-era h2 .resaltado {
+  color: #5683A8;
+}
+main .macaco-era .macaco-era-banda {
+  background-color: #5683A8;
+  padding: 2rem 0;
+  margin-bottom: 3.5rem;
+}
+main .macaco-era .macaco-era-banda .macaco-era-fotos {
+  display: flex;
+}
+main .macaco-era .macaco-era-banda .macaco-era-fotos img {
+  flex: 1;
+  min-width: 0;
+  height: 320px;
+  object-fit: cover;
+}
+main .macaco-era .macaco-era-texto {
+  font-size: 2rem;
+  line-height: 1.4;
+  text-align: center;
+}
+main .macaco-incluye {
+  background-color: #ebe8e9;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+main .macaco-incluye .macaco-incluye-titulo {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+main .macaco-incluye .macaco-incluye-titulo h2 {
+  color: #5683A8;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  font-weight: bolder;
+}
+main .macaco-incluye .macaco-incluye-titulo p {
+  font-size: 1.4rem;
+  text-decoration: underline;
+  color: #280619;
+  margin: 0;
+}
+main .macaco-incluye .macaco-item {
+  margin-bottom: 4rem;
+}
+main .macaco-incluye .macaco-item:last-child {
+  margin-bottom: 0;
+}
+main .macaco-incluye .macaco-item .macaco-item-imagen img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+main .macaco-incluye .macaco-item .macaco-item-etiqueta {
+  display: inline-block;
+  background-color: #5683A8;
+  color: #ebe8e9;
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding: 0.3rem 0.8rem;
+  margin: 0 0 1rem -1.5rem;
+}
+main .macaco-incluye .macaco-item .macaco-item-texto p,
+main .macaco-incluye .macaco-item .macaco-item-texto li {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+main .macaco-incluye .macaco-item .macaco-item-texto p {
+  margin: 0;
+}
+main .macaco-incluye .macaco-item .macaco-item-texto ul {
+  font-family: "Prompt", sans-serif;
+  color: #280619;
+  margin: 0;
+  padding-left: 1.5rem;
+}
+main .macaco-incluye .macaco-item--invertido .macaco-item-etiqueta {
+  margin: 0 -1.5rem 1rem 0;
+}
+main .macaco-incluye .macaco-item--invertido .macaco-item-imagen img {
+  max-width: 260px;
+  margin: 0 auto;
+}
 
 footer {
   padding: 3%;
@@ -728,6 +822,13 @@ footer .container .redes-sociales a:hover {
   }
   main .testimonio blockquote p {
     font-size: 1.05rem;
+  }
+  main .macaco-era h2 {
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
+  main .macaco-era .macaco-era-texto {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 767px) and (max-width: 991px) {
@@ -971,6 +1072,25 @@ footer .container .redes-sociales a:hover {
   }
   main .macaco-inicio .macaco-propuesta p {
     padding-left: 0.5rem;
+  }
+  main .macaco-era h2 {
+    font-size: 2.2rem;
+    padding-bottom: 1.5rem;
+  }
+  main .macaco-era .macaco-era-banda {
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+  }
+  main .macaco-era .macaco-era-fotos {
+    flex-direction: column;
+  }
+  main .macaco-era .macaco-era-fotos img {
+    flex: none;
+    width: 100%;
+    height: 220px;
+  }
+  main .macaco-era .macaco-era-texto {
+    font-size: 1.2rem;
   }
 }
 * {

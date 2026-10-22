@@ -180,6 +180,25 @@
   main .macaco-inicio .macaco-propuesta p {
     padding-left: 0.5rem;
   }
+  main .macaco-era h2 {
+    font-size: 2.2rem;
+    padding-bottom: 1.5rem;
+  }
+  main .macaco-era .macaco-era-banda {
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+  }
+  main .macaco-era .macaco-era-fotos {
+    flex-direction: column;
+  }
+  main .macaco-era .macaco-era-fotos img {
+    flex: none;
+    width: 100%;
+    height: 220px;
+  }
+  main .macaco-era .macaco-era-texto {
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=responsive-mobile.css.map */

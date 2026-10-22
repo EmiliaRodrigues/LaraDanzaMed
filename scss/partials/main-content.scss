@@ -530,4 +530,103 @@ main{
             }
         }
     }
+    .macaco-era{
+        padding: 3rem 0 4rem;
+        h2 {
+            text-align: center;
+            line-height: 1;
+            padding-bottom: 3rem;
+
+            .resaltado {
+            color: variables.$colormacaco;
+            }
+        }
+        .macaco-era-banda {
+            background-color: variables.$colormacaco;
+            padding: 2rem 0;
+            margin-bottom: 3.5rem;
+            .macaco-era-fotos {
+                display: flex;
+
+                img {
+                flex: 1;
+                min-width: 0;
+                height: 320px;
+                object-fit: cover;
+                }
+            }
+        }
+        .macaco-era-texto{
+                font-size: 2rem;
+                line-height: 1.4;
+                text-align: center;
+            }
+    }
+    .macaco-incluye{
+        background-color: variables.$colorfondo2;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        .macaco-incluye-titulo {
+            text-align: center;
+            margin-bottom: 3rem;
+            h2 {
+                color: variables.$colormacaco;
+                line-height: 1;
+                margin: 0;
+                padding: 0;
+                font-weight:bolder
+            }
+            p {
+                font-size: 1.4rem;
+                text-decoration: underline;
+                color: variables.$colorletraoscuro;
+                margin: 0;
+            }
+        }
+        .macaco-item {
+            margin-bottom: 4rem;
+            &:last-child {
+            margin-bottom: 0;
+            }
+            .macaco-item-imagen img {
+            display: block;
+            width: 100%;
+            height: auto;
+            }
+            .macaco-item-etiqueta {
+            display: inline-block;
+            background-color: variables.$colormacaco;
+            color: variables.$colorfondo2;
+            font-family: "Prompt", sans-serif;
+            font-weight: 400;
+            font-size: 1.8rem;
+            padding: 0.3rem 0.8rem;
+            margin: 0 0 1rem -1.5rem; // se superpone un poco sobre la foto
+            }
+            .macaco-item-texto {
+            p,
+            li {
+                font-size: 1.6rem;
+                line-height: 1.4;
+            }
+            p {
+                margin: 0;
+            }
+            ul {
+                font-family: "Prompt", sans-serif;
+                color: variables.$colorletraoscuro;
+                margin: 0;
+                padding-left: 1.5rem;
+            }
+            }
+        }
+        // Ítem del ebook: la etiqueta se superpone hacia la derecha
+        .macaco-item--invertido .macaco-item-etiqueta {
+            margin: 0 -1.5rem 1rem 0;
+        }
+        .macaco-item--invertido .macaco-item-imagen img {
+            max-width: 260px;
+            margin: 0 auto;
+        }
+    }
 }

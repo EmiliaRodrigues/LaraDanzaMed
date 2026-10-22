@@ -199,6 +199,67 @@
   main .macaco-era .macaco-era-texto {
     font-size: 1.2rem;
   }
+  main .macaco-requisitos {
+    padding: 3rem 0;
+  }
+  main .macaco-requisitos h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  main .macaco-requisitos .macaco-nivel {
+    margin-bottom: 2rem;
+  }
+  main .macaco-requisitos .macaco-nivel h3 {
+    font-size: 2rem;
+  }
+  main .macaco-requisitos .macaco-nivel p {
+    font-size: 1.1rem;
+  }
+  main .macaco-requisitos .macaco-espacio {
+    margin-top: 1rem;
+  }
+  main .macaco-requisitos .macaco-espacio .macaco-espacio-etiqueta {
+    font-size: 1.1rem;
+  }
+  main .macaco-incluye {
+    padding: 2.5rem 0;
+  }
+  main .macaco-incluye .macaco-incluye-titulo {
+    margin-bottom: 1.5rem;
+  }
+  main .macaco-incluye .macaco-incluye-titulo h2 {
+    font-size: 2.2rem;
+  }
+  main .macaco-incluye .macaco-incluye-titulo p {
+    font-size: 1rem;
+  }
+  main .macaco-incluye .macaco-item {
+    margin-bottom: 2.5rem;
+  }
+  main .macaco-incluye .macaco-item .macaco-item-imagen {
+    margin-bottom: 1rem;
+  }
+  main .macaco-incluye .macaco-item .macaco-item-etiqueta {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+  main .macaco-incluye .macaco-item .macaco-item-texto p,
+  main .macaco-incluye .macaco-item .macaco-item-texto li {
+    font-size: 1.1rem;
+  }
+  main .macaco-incluye .macaco-item--invertido .macaco-item-etiqueta {
+    margin-right: 0;
+  }
+  main .macaco-incluye .macaco-item--invertido .macaco-item-imagen img {
+    max-width: 200px;
+  }
+  main .macaco-cierre {
+    padding: 3rem 0 2.5rem;
+  }
+  main .macaco-cierre h2 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
 }
 
 /*# sourceMappingURL=responsive-mobile.css.map */

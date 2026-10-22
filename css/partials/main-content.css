@@ -22,7 +22,7 @@ main p {
   font-family: "Prompt", sans-serif;
   color: #280619;
 }
-main .btn-inicio, main .btn-acro, main .btn-macaco {
+main .btn-inicio, main .btn-acro, main .btn-macaco, main .btn-susp, main button {
   font-family: "Prompt", sans-serif;
   color: #FFE1E0;
   text-decoration: none;
@@ -35,12 +35,12 @@ main .btn-inicio, main .btn-acro, main .btn-macaco {
   border: 10%;
   border: 1px solid #FFE1E0;
 }
-main .btn-inicio:hover, main .btn-acro:hover, main .btn-macaco:hover {
+main .btn-inicio:hover, main .btn-acro:hover, main .btn-macaco:hover, main .btn-susp:hover, main button:hover {
   background: linear-gradient(90deg, #71568f, #732952);
   box-shadow: 0 4px 15px rgb(234, 149, 212);
   transform: scale(1.05);
 }
-main .btn-inicio:active, main .btn-acro:active, main .btn-macaco:active {
+main .btn-inicio:active, main .btn-acro:active, main .btn-macaco:active, main .btn-susp:active, main button:active {
   background: linear-gradient(90deg, #71568f, #732952);
   transform: scale(0.98);
   box-shadow: 0 4px 15px rgb(234, 149, 212);
@@ -214,6 +214,7 @@ main .foto2 .foto2-texto {
   justify-content: flex-end;
   text-align: end;
   padding-right: 3%;
+  padding-bottom: 3rem;
 }
 main .foto2 .foto2-texto h2 {
   font-size: 3rem;
@@ -499,13 +500,6 @@ main .macaco-inicio .macaco-propuesta p {
   font-size: 1.5rem;
   padding-left: 1.5rem;
 }
-main .macaco-inicio .macaco-cta {
-  text-align: center;
-}
-main .macaco-inicio .macaco-cta .macaco-aviso {
-  font-size: 0.7rem;
-  margin-top: 0.8rem;
-}
 main .macaco-era {
   padding: 3rem 0 4rem;
 }
@@ -515,7 +509,7 @@ main .macaco-era h2 {
   padding-bottom: 3rem;
 }
 main .macaco-era h2 .resaltado {
-  color: #5683A8;
+  color: #67549f;
 }
 main .macaco-era .macaco-era-banda {
   background-color: #5683A8;
@@ -599,6 +593,78 @@ main .macaco-incluye .macaco-item--invertido .macaco-item-etiqueta {
 main .macaco-incluye .macaco-item--invertido .macaco-item-imagen img {
   max-width: 260px;
   margin: 0 auto;
+}
+main .macaco-requisitos {
+  background-color: #5683A8;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+main .macaco-requisitos h2 {
+  color: #ebe8e9;
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+main .macaco-requisitos h2 .subrayado {
+  text-decoration: underline;
+}
+main .macaco-requisitos .macaco-nivel h3 {
+  color: #ebe8e9;
+  font-size: 2.5rem;
+  line-height: 1;
+  padding-bottom: 1rem;
+}
+main .macaco-requisitos .macaco-nivel p {
+  color: #ebe8e9;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  margin: 0;
+}
+main .macaco-requisitos .macaco-espacio {
+  margin-top: 4rem;
+}
+main .macaco-requisitos .macaco-espacio .macaco-espacio-etiqueta {
+  display: inline-block;
+  background-color: #ebe8e9;
+  color: #5683A8;
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 0.3rem 0.8rem;
+  margin: 0;
+}
+main .macaco-requisitos .macaco-espacio .macaco-espacio-etiqueta strong {
+  font-weight: 700;
+}
+main .macaco-cierre {
+  background-color: #ebe8e9;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+main .macaco-cierre h2 {
+  text-align: center;
+  font-size: 4rem;
+  line-height: 1;
+  padding-bottom: 0;
+  margin-bottom: 4rem;
+}
+main .macaco-cierre h2 span {
+  display: block;
+}
+main .macaco-cierre h2 .violeta {
+  color: #71568f;
+}
+main .macaco-cierre h2 .azul {
+  color: #5683A8;
+}
+main .macaco-cierre .btn-macaco {
+  padding: 1%;
+}
+main .macaco-cta {
+  text-align: center;
+}
+main .macaco-cta .macaco-aviso {
+  font-size: 0.7rem;
+  margin-top: 0.8rem;
 }
 
 /*# sourceMappingURL=main-content.css.map */

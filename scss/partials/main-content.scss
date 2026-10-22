@@ -23,7 +23,7 @@ main{
         font-family:  variables.$letraparrafos;
         color: variables.$colorletraoscuro;
     }
-    .btn-inicio, .btn-acro, .btn-macaco{
+    .btn-inicio, .btn-acro, .btn-macaco, .btn-susp, button{
         font-family: variables.$letraparrafos;
         color: variables.$colorletras;
         text-decoration: none;
@@ -223,6 +223,7 @@ main{
             justify-content: flex-end;
             text-align: end;
             padding-right: 3%;
+            padding-bottom: 3rem;
             h2{
                 font-size: 3rem;
                 color: azure;
@@ -489,14 +490,12 @@ main{
     //MACACO
     .macaco-inicio{
         background-color: variables.$colorfondo;
-
         .macaco-portada-foto img {
             display: block;
             width: 100%;
             border-radius: 30px;
             padding: 5%;
         }
-
         .macaco-etiqueta {
             display: inline-block;
             background-color: variables.$colormacaco;
@@ -505,7 +504,6 @@ main{
             padding: 0.3rem 0.6rem;
             margin-bottom: 1rem;
         }
-
         .macaco-propuesta{
             background-color: variables.$colormacaco;
             padding: 1rem 1rem;
@@ -522,13 +520,6 @@ main{
                 padding-left: 1.5rem;
             }
         }
-        .macaco-cta {
-            text-align: center;
-            .macaco-aviso {
-                font-size: 0.7rem;
-                margin-top: 0.8rem;
-            }
-        }
     }
     .macaco-era{
         padding: 3rem 0 4rem;
@@ -536,9 +527,8 @@ main{
             text-align: center;
             line-height: 1;
             padding-bottom: 3rem;
-
             .resaltado {
-            color: variables.$colormacaco;
+            color: variables.$colorprincipal;
             }
         }
         .macaco-era-banda {
@@ -627,6 +617,81 @@ main{
         .macaco-item--invertido .macaco-item-imagen img {
             max-width: 260px;
             margin: 0 auto;
+        }
+    }
+    .macaco-requisitos{
+        background-color: variables.$colormacaco;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        h2{
+            color: variables.$colorfondo2;
+            font-size: 4rem;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            .subrayado {
+            text-decoration: underline;
+            }
+        }
+        .macaco-nivel {
+            h3 {
+            color: variables.$colorfondo2;
+            font-size: 2.5rem;
+            line-height: 1;
+            padding-bottom: 1rem;
+            }
+
+            p {
+            color: variables.$colorfondo2;
+            font-size: 1.4rem;
+            line-height: 1.3;
+            margin: 0;
+            }
+        }
+        .macaco-espacio {
+            margin-top: 4rem;
+            .macaco-espacio-etiqueta {
+                display: inline-block;
+                background-color: variables.$colorfondo2;
+                color: variables.$colormacaco;
+                font-weight: 300;
+                font-size: 2rem;
+                padding: 0.3rem 0.8rem;
+                margin: 0;
+                strong {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .macaco-cierre{
+        background-color: variables.$colorfondo2;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        h2 {
+            text-align: center;
+            font-size: 4rem;
+            line-height: 1;
+            padding-bottom: 0;
+            margin-bottom: 4rem;
+            span {
+            display: block;
+            }
+            .violeta {
+            color: variables.$colorsecundario;
+            }
+            .azul {
+            color: variables.$colormacaco;
+            }
+        }
+        .btn-macaco{
+            padding: 1%;
+        }
+    }
+    .macaco-cta {
+        text-align: center;
+        .macaco-aviso {
+            font-size: 0.7rem;
+            margin-top: 0.8rem;
         }
     }
 }

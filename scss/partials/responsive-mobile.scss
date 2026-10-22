@@ -238,5 +238,78 @@
             font-size: 1.2rem;
             }
         }
+        .macaco-requisitos {
+            padding: 3rem 0;
+
+            h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            }
+
+            .macaco-nivel {
+            margin-bottom: 2rem;
+
+            h3 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+            }
+
+            .macaco-espacio {
+            margin-top: 1rem;
+
+            .macaco-espacio-etiqueta {
+                font-size: 1.1rem;
+            }
+            }
+        }
+        .macaco-incluye {
+            padding: 2.5rem 0;
+            .macaco-incluye-titulo {
+            margin-bottom: 1.5rem;
+            h2 {
+                font-size: 2.2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            }
+            .macaco-item {
+            margin-bottom: 2.5rem;
+
+            .macaco-item-imagen {
+                margin-bottom: 1rem;
+            }
+
+            .macaco-item-etiqueta {
+                font-size: 1.2rem;
+                margin-left: 0;
+            }
+
+            .macaco-item-texto p,
+            .macaco-item-texto li {
+                font-size: 1.1rem;
+            }
+            }
+
+            .macaco-item--invertido .macaco-item-etiqueta {
+            margin-right: 0;
+            }
+
+            .macaco-item--invertido .macaco-item-imagen img {
+            max-width: 200px;
+            }
+        }
+        .macaco-cierre {
+            padding: 3rem 0 2.5rem;
+
+            h2 {
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            }
+        }
     }
 }
